@@ -193,12 +193,31 @@ void SalvaAlunos(Aluno alunos[], int quantidade){
     fclose(arquivo);
     printf("Alunos salvos com sucesso!\n");
 }
+void CarregaAlunos(Aluno alunos[],int *quantidade){
+    FILE *arquivo = fopen("dados.txt", "r");
+
+    if(arquivo == NULL){
+        return;
+    }
+    while(fscanf(arquivo, "%d;%99[^;];%f;%f;%f",
+        &alunos[*quantidade].matricula,
+        alunos[*quantidade].nome,
+        &alunos[*quantidade].nota_1,
+        &alunos[*quantidade].nota_2,
+        &alunos[*quantidade].media) == 5){
+
+        (*quantidade)++;
+    }
+
+    fclose(arquivo);
+
+}
 
 int main(){
     Aluno alunos[MAX_ALUNOS];
     int quantidade = 0;
     int opcao;
-
+    CarregaAlunos(alunos, &quantidade);
 do{
     printf("\n===== SISTEMA DE CADASTRO DE ALUNOS =====\n");
     printf("1 - Cadastrar aluno\n");
