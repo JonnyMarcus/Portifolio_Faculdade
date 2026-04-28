@@ -212,7 +212,23 @@ void CarregaAlunos(Aluno alunos[],int *quantidade){
     fclose(arquivo);
 
 }
+void OrdenarPorNome(Aluno alunos[], int quantidade){
+    Aluno temp;
 
+    for(int i = 0; i < quantidade - 1; i++){
+        for(int j = i + 1; j < quantidade; j++){
+
+            if(strcmp(alunos[i].nome, alunos[j].nome) > 0){
+
+                temp = alunos[i];
+                alunos[i] = alunos[j];
+                alunos[j] = temp;
+            }
+        }
+    }
+
+    printf("Alunos ordenados por nome com sucesso!\n");
+}
 int main(){
     Aluno alunos[MAX_ALUNOS];
     int quantidade = 0;
@@ -227,6 +243,7 @@ do{
     printf("5 - Editar Aluno\n");
     printf("6 - Remover Aluno\n");
     printf("7 - Salvar Alunos no arquivo\n");
+    printf("8 - Ordenar alunos por nome\n");
     printf("0 - Sair\n");
     printf("Escolha: ");
     scanf("%d", &opcao);
@@ -259,6 +276,10 @@ case 6:
 case 7:
     printf("\n");
     SalvaAlunos(alunos,quantidade);
+    break;
+case 8:
+    printf("\n");
+    OrdenarPorNome(alunos, quantidade);
     break;
 case 0:
     printf("\n");
