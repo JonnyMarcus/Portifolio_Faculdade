@@ -112,6 +112,43 @@ void CalculandoMediaTurma(Aluno alunos[],int quantidade){
     }
    printf("Media geral da turma: %.2f\n", soma / quantidade);
 }
+void EditaAluno(Aluno alunos[], int quantidade){
+int matriculaBusca;
+
+    if(quantidade == 0){
+        printf("Nenhum aluno cadastrado!\n");
+        return;
+    }
+
+    printf("Digite a matricula do aluno que deseja editar: ");
+    scanf("%d", &matriculaBusca);
+
+    for(int i = 0; i < quantidade; i++){
+        if(alunos[i].matricula == matriculaBusca){
+            printf("\n=== EDITANDO ALUNO ===\n");
+
+            getchar();
+
+            printf("Novo nome: ");
+            fgets(alunos[i].nome, 100, stdin);
+            alunos[i].nome[strcspn(alunos[i].nome, "\n")] = '\0';
+
+            printf("Nova nota 1: ");
+            scanf("%f", &alunos[i].nota_1);
+
+            printf("Nova nota 2: ");
+            scanf("%f", &alunos[i].nota_2);
+
+            alunos[i].media = (alunos[i].nota_1 + alunos[i].nota_2) / 2;
+
+            printf("Aluno editado com sucesso!\n");
+            return;
+        }
+    }
+
+    printf("Aluno nao encontrado!\n");
+}
+
 
 int main(){
     Aluno alunos[MAX_ALUNOS];
@@ -124,6 +161,7 @@ do{
     printf("2 - Listar alunos\n");
     printf("3 - Buscar aluno\n");
     printf("4 - Calcular media da turma\n");
+    printf("5 - Editar Aluno\n");
     printf("0 - Sair\n");
     printf("Escolha: ");
     scanf("%d", &opcao);
@@ -144,6 +182,10 @@ case 3:
 case 4:
     printf("\n");
     CalculandoMediaTurma(alunos, quantidade);
+    break;
+case 5:
+    printf("\n");
+    EditaAluno(alunos, quantidade);
     break;
 case 0:
     printf("\n");
