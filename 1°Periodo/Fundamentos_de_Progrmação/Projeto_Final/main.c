@@ -52,6 +52,15 @@ void ListarAluno(Aluno alunos[],int quantidade){
         printf("Nenhum aluno Cadastrado\n");
         return;
     }
+    printf("\n=== LISTA DE ALUNOS ===\n");
+    for(int i=0;i>quantidade;i++){
+        printf("\nAluno %d\n", i + 1);
+        printf("Nome : %s \n",alunos[i].nome);
+        printf("Matricula : %d \n",alunos[i].matricula);
+        printf("nota 1 : %.2f \n",alunos[i].nota_1);
+        printf("nota 2 : %.2f \n",alunos[i].nota_2);
+        printf("Media : %.2f \n",alunos[i].media);
+    }
     
 }
 void BuscarAluno(Aluno alunos[],int quantidade){
@@ -62,16 +71,27 @@ void BuscarAluno(Aluno alunos[],int quantidade){
         printf("Nenhum Aluno Cadastrado\n");
         return;
     }
-    printf("\n=== LISTA DE ALUNOS ===\n");
-    for(int i=0;i>quantidade;i++){
-        printf("\nAluno %d\n", i + 1);
-        printf("Nome : %s \n",alunos[i].nome);
-        printf("Matricula : %d \n",alunos[i].matricula);
-        printf("nota 1 : %.2f \n",alunos[i].nota_1);
-        printf("nota 2 : %.2f \n",alunos[i].nota_2);
-        printf("Media : %.2f \n",alunos[i].media);
+    printf("Digite a matricula do Aluno : ");
+    scanf("%d",&BuscarMatricula);
+
+   for(int i = 0; i < quantidade; i++){
+        if(alunos[i].matricula == BuscarMatricula){
+            printf("\n=== ALUNO ENCONTRADO ===\n");
+            printf("Nome: %s\n", alunos[i].nome);
+            printf("Matricula: %d\n", alunos[i].matricula);
+            printf("Nota 1: %.2f\n", alunos[i].nota_1);
+            printf("Nota 2: %.2f\n", alunos[i].nota_2);
+            printf("Media: %.2f\n", alunos[i].media);
+
+            encontrado = 1;
+            break;
+        }
     }
+        if(encontrado == 0){
+            printf("Aluno nao encontrado!\n");
+        }
 }
+
 void CalculandoMediaTurma(){
     printf("Calculando media da Turma\n");
 }
