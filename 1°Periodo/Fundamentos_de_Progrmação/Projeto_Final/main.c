@@ -60,6 +60,7 @@ void ListarAluno(Aluno alunos[],int quantidade){
         printf("nota 1 : %.2f \n",alunos[i].nota_1);
         printf("nota 2 : %.2f \n",alunos[i].nota_2);
         printf("Media : %.2f \n",alunos[i].media);
+        MostrarSituacao(alunos[i].media);
     }
     
 }
@@ -82,7 +83,7 @@ void BuscarAluno(Aluno alunos[],int quantidade){
             printf("Nota 1: %.2f\n", alunos[i].nota_1);
             printf("Nota 2: %.2f\n", alunos[i].nota_2);
             printf("Media: %.2f\n", alunos[i].media);
-
+            MostrarSituacao(alunos[i].media);
             encontrado = 1;
             break;
         }
@@ -91,9 +92,25 @@ void BuscarAluno(Aluno alunos[],int quantidade){
             printf("Aluno nao encontrado!\n");
         }
 }
+void situacaoAluno(float media){
+     if(media >= 5.9 ){
+        printf("Situacao: Aprovado\n");
+    }else{
+        printf("Situacao: Reprovado\n");
+    }
 
-void CalculandoMediaTurma(){
-    printf("Calculando media da Turma\n");
+}
+
+void CalculandoMediaTurma(Aluno alunos[],int quantidade){
+    float soma =0;
+    if(quantidade ==0){
+        printf("Nenhum aluno cadastrado!\n");
+        return;
+    }
+    for(int i=0;i<quantidade;i++){
+        soma += alunos[i].media;
+    }
+   printf("Media geral da turma: %.2f\n", soma / quantidade);
 }
 
 int main(){
@@ -126,7 +143,7 @@ case 3:
     break;
 case 4:
     printf("\n");
-    CalculandoMediaTurma();
+    CalculandoMediaTurma(alunos, quantidade);
     break;
 case 0:
     printf("\n");
