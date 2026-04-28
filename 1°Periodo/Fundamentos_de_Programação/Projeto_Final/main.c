@@ -47,6 +47,14 @@ void CadastrarAluno(Aluno alunos[],int *quantidade){
     (*quantidade)++;
 
 }
+void MostrarSituacao(float media){
+    if(media >= 6){
+        printf("Situacao: Aprovado\n");
+    
+    }else{
+        printf("Situacao: Reprovado\n");
+    }
+}
 void ListarAluno(Aluno alunos[],int quantidade){
     if(quantidade==0){
         printf("Nenhum aluno Cadastrado\n");
@@ -92,14 +100,7 @@ void BuscarAluno(Aluno alunos[],int quantidade){
             printf("Aluno nao encontrado!\n");
         }
 }
-void situacaoAluno(float media){
-     if(media >= 5.9 ){
-        printf("Situacao: Aprovado\n");
-    }else{
-        printf("Situacao: Reprovado\n");
-    }
 
-}
 
 void CalculandoMediaTurma(Aluno alunos[],int quantidade){
     float soma =0;
