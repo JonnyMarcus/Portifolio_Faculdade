@@ -47,11 +47,30 @@ void CadastrarAluno(Aluno alunos[],int *quantidade){
     (*quantidade)++;
 
 }
-void ListarAluno(){
-    printf("Listar ALunos\n");
+void ListarAluno(Aluno alunos[],int quantidade){
+    if(quantidade==0){
+        printf("Nenhum aluno Cadastrado\n");
+        return;
+    }
+    
 }
-void BuscarAluno(){
-    printf("Buscar Aluno\n");
+void BuscarAluno(Aluno alunos[],int quantidade){
+    int BuscarMatricula;
+    int encontrado = 0;
+
+    if(quantidade ==0){
+        printf("Nenhum Aluno Cadastrado\n");
+        return;
+    }
+    printf("\n=== LISTA DE ALUNOS ===\n");
+    for(int i=0;i>quantidade;i++){
+        printf("\nAluno %d\n", i + 1);
+        printf("Nome : %s \n",alunos[i].nome);
+        printf("Matricula : %d \n",alunos[i].matricula);
+        printf("nota 1 : %.2f \n",alunos[i].nota_1);
+        printf("nota 2 : %.2f \n",alunos[i].nota_2);
+        printf("Media : %.2f \n",alunos[i].media);
+    }
 }
 void CalculandoMediaTurma(){
     printf("Calculando media da Turma\n");
@@ -79,11 +98,11 @@ case 1:
     break;
 case 2:
     printf("\n");
-    ListarAluno();
+    ListarAluno(alunos, quantidade);
     break;
 case 3:
     printf("\n");
-    BuscarAluno();
+    BuscarAluno(alunos, quantidade);
     break;
 case 4:
     printf("\n");
