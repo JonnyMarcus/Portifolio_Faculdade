@@ -174,6 +174,25 @@ for(int i = 0; i < *quantidade; i++){
 
 
 }
+void SalvaAlunos(Aluno alunos[], int quantidade){
+    FILE *arquivo = fopen("dados.txt","W");
+
+    if(arquivo == NULL){
+        printf("Erro ao abrir o arquivo!\n");
+        return;
+    }
+    for(int i = 0; i < quantidade; i++){
+        fprintf(arquivo, "%d;%s;%.2f;%.2f;%.2f\n",
+            alunos[i].matricula,
+            alunos[i].nome,
+            alunos[i].nota_1,
+            alunos[i].nota_2,
+            alunos[i].media
+        );
+    }
+    fclose(arquivo);
+    printf("Alunos salvos com sucesso!\n");
+}
 
 int main(){
     Aluno alunos[MAX_ALUNOS];
@@ -188,6 +207,7 @@ do{
     printf("4 - Calcular media da turma\n");
     printf("5 - Editar Aluno\n");
     printf("6 - Remover Aluno\n");
+    printf("7 - Salvar Alunos no arquivo\n");
     printf("0 - Sair\n");
     printf("Escolha: ");
     scanf("%d", &opcao);
@@ -216,6 +236,10 @@ case 5:
 case 6:
     printf("\n");
     RemoverAluno(alunos, &quantidade);
+    break;
+case 7:
+    printf("\n");
+    SalvaAlunos(alunos,quantidade);
     break;
 case 0:
     printf("\n");
