@@ -50,7 +50,6 @@ disciplina/
 ├── implementacoes_praticas/
 ├── exercicios/
 ├── trabalhos/
-├── provas/
 └── resumos/
 ```
 
