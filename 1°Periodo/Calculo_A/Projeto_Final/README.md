@@ -2,154 +2,204 @@
 
 ## 📚 Sobre o Projeto
 
-Projeto desenvolvido para aplicar, de forma computacional, os principais conceitos estudados em **Cálculo A**, transformando análise matemática em uma ferramenta programada em linguagem C.
+Projeto desenvolvido em linguagem **C** com foco na aplicação prática dos principais conceitos estudados em **Cálculo A**, integrando análise matemática e visualização gráfica.
 
-O sistema recebe os coeficientes de uma função quadrática e realiza automaticamente a análise matemática principal da função.
+O sistema permite analisar funções matemáticas, calcular derivadas, aproximar integrais, estudar limites e gerar gráficos automaticamente.
 
 ---
 
-## 🎯 Objetivos do Projeto
+## 🎯 Objetivo
 
-* Aplicar derivadas na prática
-* Interpretar comportamento de funções
-* Relacionar matemática e programação
-* Consolidar lógica computacional em C
+Aplicar conceitos de cálculo diferencial e integral através da programação, transformando teoria matemática em análise computacional.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-### 📌 Entrada de função quadrática
+### 🔹 Entrada de Função
 
-```text id="f8m3qc"
-f(x) = ax² + bx + c
-```
+* função quadrática
+* função polinomial simples
 
----
+### 🔹 Cálculo de Limites
 
-### 📌 Cálculo automático de:
+* aproximação numérica lateral
+* comportamento em pontos específicos
 
-* raízes da função
+### 🔹 Derivadas
+
+* cálculo da derivada da função
+
+f'(x)=\frac{d}{dx}f(x)
+
+* análise de crescimento
+* análise de decrescimento
+
+### 🔹 Integrais
+
+* cálculo aproximado por soma de retângulos
+
+\int_a^b f(x),dx
+
+* área sob a curva
+
+### 🔹 Estudo da Função
+
+* raízes
 * vértice
-* valor máximo ou mínimo
-* derivada da função
-* crescimento e decrescimento
+* máximo e mínimo
 
----
+### 🔹 Plotagem Gráfica
 
-## 🧠 Conceitos Matemáticos Aplicados
-
-### ✅ Derivada
-
-A derivada da função quadrática é:
-
-f'(x)=2ax+b
-
----
-
-### ✅ Vértice da parábola
-
-x_v=-\frac{b}{2a}
-
----
-
-### ✅ Discriminante
-
-\Delta=b^2-4ac
-
----
-
-## 💻 Conceitos de Programação Utilizados
-
-### ✅ Entrada e saída de dados
-
-### ✅ Estruturas condicionais
-
-### ✅ Funções
-
-### ✅ Operações matemáticas
-
-### ✅ Modularização simples
+* geração automática de pontos
+* criação de gráfico com gnuplot
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-```bash id="j2v6pk"
+```bash
 analisador_funcoes/
 │
 ├── README.md
-└── main.c
+├── main.c
+├── funcoes.c
+├── funcoes.h
+├── grafico.c
+├── grafico.h
+├── dados.txt
+└── graficos/
 ```
 
 ---
 
-## 💡 Exemplo de Funcionamento
+## 📁 Organização dos Arquivos
+
+### main.c
+
+Responsável pelo menu principal e interação com o usuário.
+
+### funcoes.c / funcoes.h
+
+Contém:
+
+* cálculo da função
+* derivada
+* limites
+* integral
+
+### grafico.c / grafico.h
+
+Responsável por:
+
+* gerar pontos
+* salvar em arquivo
+* chamar gnuplot
+
+### dados.txt
+
+Arquivo temporário contendo os pontos do gráfico.
+
+### graficos/
+
+Armazena gráficos gerados.
+
+---
+
+## 🧠 Conceitos Matemáticos Aplicados
+
+### Limite
+
+\lim_{x\to a} f(x)
+
+### Derivada de função quadrática
+
+genui{"math_block_widget_always_prefetch_v2":{"content":"f(x)=ax^2+bx+c"}}
+
+
+### Integral numérica
+
+\sum f(x)\Delta x
+
+---
+
+## 💻 Exemplo de Uso
 
 Entrada:
 
-```text id="r7n4sd"
-a = 1
-b = -4
-c = 3
+```text
+f(x)=2x²+3x−1
 ```
 
 Saída:
 
-```text id="n5w8zl"
-Raízes: x1 = 1, x2 = 3
-Vértice: (2, -1)
-Derivada: 2x - 4
-Função decrescente até x = 2
-Função crescente após x = 2
+```text
+Derivada: 4x+3
+Raízes: x1, x2
+Vértice: (xv, yv)
+Integral aproximada: ...
 ```
 
 ---
 
-## 📈 Relação com Cálculo A
+## 📈 Plotagem de Gráfico
 
-Este projeto aplica diretamente:
+O programa gera automaticamente pontos da função e envia para o gnuplot.
 
-* derivadas
-* análise de gráficos
-* máximos e mínimos
-* interpretação de função
+Exemplo de geração:
+
+```text
+-2 3
+-1 0
+0 -1
+1 0
+2 3
+```
 
 ---
 
-## 🚀 Como Executar
+## 🚀 Compilação
 
-Compilar:
-
-```bash id="m4q1xy"
-gcc main.c -o analisador
+```bash
+gcc main.c funcoes.c grafico.c -o analisador
 ```
 
-Executar:
+---
 
-```bash id="t9p2kd"
+## ▶️ Execução
+
+```bash
 ./analisador
 ```
 
-No Windows:
+---
 
-```bash id="b6c7wr"
-analisador.exe
-```
+## 🛠️ Dependências
+
+* GCC
+* gnuplot
+* Visual Studio Code
 
 ---
 
-## 💡 Possíveis Evoluções Futuras
+## 🎓 Relação com Cálculo A
 
-* funções cúbicas
-* cálculo numérico de área
-* gráfico em interface visual
+Este projeto integra:
+
+* funções
+* limites
+* derivadas
+* integrais
+* interpretação gráfica
 
 ---
 
-## 🎓 Importância Acadêmica
+## 📈 Possíveis Evoluções Futuras
 
-Este projeto representa a aplicação computacional dos principais conceitos de Cálculo A estudados no início da graduação.
+* derivada numérica automática
+* integrais definidas mais precisas
+* múltiplos tipos de função
+* comparação entre função e derivada
 
 ---
 
