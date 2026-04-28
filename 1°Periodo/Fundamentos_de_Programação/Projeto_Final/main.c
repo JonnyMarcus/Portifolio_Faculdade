@@ -61,7 +61,7 @@ void ListarAluno(Aluno alunos[],int quantidade){
         return;
     }
     printf("\n=== LISTA DE ALUNOS ===\n");
-    for(int i=0;i>quantidade;i++){
+    for(int i=0;i<quantidade;i++){
         printf("\nAluno %d\n", i + 1);
         printf("Nome : %s \n",alunos[i].nome);
         printf("Matricula : %d \n",alunos[i].matricula);
@@ -176,7 +176,7 @@ for(int i = 0; i < *quantidade; i++){
 
 }
 void SalvaAlunos(Aluno alunos[], int quantidade){
-    FILE *arquivo = fopen("dados.txt","W");
+    FILE *arquivo = fopen("dados.txt","w");
 
     if(arquivo == NULL){
         printf("Erro ao abrir o arquivo!\n");
