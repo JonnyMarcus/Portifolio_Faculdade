@@ -2,86 +2,89 @@
 
 ## 📚 Sobre a Disciplina
 
-Disciplina cursada no curso de Ciência da Computação com foco na compreensão da organização interna dos sistemas computacionais, abordando desde a representação binária da informação até a estrutura interna de processadores e sistemas digitais.
+Disciplina cursada no curso de Ciência da Computação com foco no estudo da estrutura interna dos sistemas computacionais, abordando desde a representação binária da informação até a organização de processadores, memórias e sistemas digitais.
 
-Arquitetura de Computadores I desenvolve a base necessária para compreender como o hardware executa instruções, como os dados são armazenados e processados e como diferentes componentes internos impactam diretamente no desempenho de um sistema computacional.
+Arquitetura de Computadores I fornece a base essencial para compreender como o hardware executa instruções, armazena dados e coordena o funcionamento interno de um computador, permitindo analisar como cada componente influencia diretamente no desempenho computacional.
 
 ---
 
 ## 🎯 Objetivos da Disciplina
 
-Ao final da disciplina, o estudante deve ser capaz de:
+Ao longo da disciplina, foram desenvolvidas competências para:
 
-* compreender o funcionamento interno de sistemas computacionais
-* analisar a estrutura de hardware de um computador
-* entender a organização dos módulos principais de processamento
-* desenvolver visão crítica sobre desempenho computacional
-
----
-
-## 📖 Conteúdo Desenvolvido
+* compreender a organização interna de computadores
+* analisar a estrutura e funcionamento do hardware
+* interpretar o fluxo de dados dentro de sistemas computacionais
+* entender o impacto da arquitetura no desempenho
+* relacionar teoria computacional com implementação física
 
 ---
 
-## 📌 Visão Geral dos Sistemas Computacionais
+## 📖 Conteúdos Estudados
 
-* introdução à arquitetura de computadores
-* evolução histórica dos computadores
-* desempenho computacional
+---
+
+## 📌 Fundamentos de Arquitetura de Computadores
+
+* introdução à arquitetura e organização de computadores
+* evolução histórica dos sistemas computacionais
 * famílias de computadores
+* desempenho computacional
 
-### Conceitos assimilados:
+### Conhecimentos desenvolvidos
 
 * diferença entre arquitetura e organização
-* métricas de desempenho
-* evolução tecnológica
+* métricas de desempenho computacional
+* evolução tecnológica do hardware
 
 ---
 
-## 📌 Sistemas de Numeração
+## 📌 Sistemas de Numeração e Aritmética Computacional
 
-* conversão de bases numéricas
-* números binários
+* conversão entre bases numéricas
+* sistema binário
+* sistema hexadecimal
 * aritmética binária
 
-### Conceitos assimilados:
+### Conhecimentos desenvolvidos
 
 * conversão decimal, binário e hexadecimal
 * complemento de dois
-* operações binárias
+* soma e subtração binária
+* representação numérica em memória
 
 ---
 
-## 📌 Representação da Informação
+## 📌 Representação Digital da Informação
 
 * armazenamento digital de dados
+* representação de imagens
 * representação de áudio
-* imagens digitais
-* vídeos digitais
+* representação de vídeos
 
-### Conceitos assimilados:
+### Conhecimentos desenvolvidos
 
 * bits e bytes
-* resolução
+* resolução digital
 * profundidade de cor
 * digitalização de sinais
 
 ---
 
-## 📌 Sistemas Computacionais
+## 📌 Organização dos Sistemas Computacionais
 
 * processadores
+* memória principal
 * memória cache
-* memória interna
-* memória externa
-* entrada e saída
+* memória secundária
+* dispositivos de entrada e saída
 
-### Conceitos assimilados:
+### Conhecimentos desenvolvidos
 
 * hierarquia de memória
-* latência
-* throughput
-* comunicação entre módulos
+* latência e throughput
+* comunicação entre módulos computacionais
+* papel dos barramentos
 
 ---
 
@@ -93,12 +96,12 @@ Ao final da disciplina, o estudante deve ser capaz de:
 * circuitos sequenciais
 * flip-flops
 * latches
-* barramentos
 
-### Conceitos assimilados:
+### Conhecimentos desenvolvidos
 
-* lógica digital
+* lógica digital aplicada
 * simplificação booleana
+* construção de circuitos digitais
 * memória digital básica
 
 ---
@@ -106,86 +109,85 @@ Ao final da disciplina, o estudante deve ser capaz de:
 ## 📌 Microarquitetura
 
 * caminho de dados
+* unidade de controle
 * microinstruções
 
-### Conceitos assimilados:
+### Conhecimentos desenvolvidos
 
-* fluxo interno de instruções
+* fluxo interno de execução de instruções
 * controle interno da CPU
-* execução em nível microarquitetural
+* funcionamento microarquitetural
 
 ---
 
-## 📈 Evolução do Conhecimento
+## 📈 Progressão do Aprendizado
 
-A disciplina apresenta progressão clara:
+### Etapa Inicial
 
-### Início
+Fundamentos conceituais de hardware e arquitetura.
 
-Fundamentos conceituais e visão geral de hardware.
+### Etapa Intermediária
 
-### Intermediário
+Representação numérica e armazenamento digital da informação.
 
-Representação da informação e sistemas numéricos.
+### Etapa Avançada
 
-### Avançado
-
-Organização de memória, CPU e lógica digital.
+Organização de memória, lógica digital e estrutura interna da CPU.
 
 ---
 
-## 🧠 Principais Conhecimentos Desenvolvidos
+## 🧠 Competências Desenvolvidas
 
-* sistemas binários
-* organização de memória
+* interpretação de sistemas binários
+* análise de memória computacional
 * lógica digital
-* funcionamento de processadores
-* análise de desempenho computacional
+* funcionamento interno de processadores
+* raciocínio sobre desempenho computacional
 
 ---
 
-## 📚 Bibliografia Principal
+## 💻 Projeto Integrador Relacionado
 
-### Organização Estruturada de Computadores
+### Simulador de Conversão Numérica e Organização de Memória
 
-Andrew S. Tanenbaum e Todd Austin
+Projeto proposto para aplicação prática dos conceitos estudados.
 
-### Arquitetura e Organização de Computadores
+### Funcionalidades previstas
+
+* conversão decimal, binário e hexadecimal
+* operações binárias
+* cálculo de bits, bytes e endereçamento
+* simulação de memória computacional
+
+---
+
+## 📚 Bibliografia de Referência
+
+### 📘 Organização Estruturada de Computadores
+
+Andrew S. Tanenbaum • Todd Austin
+
+### 📘 Arquitetura e Organização de Computadores
 
 William Stallings
 
-### Sistemas Digitais: Princípios e Aplicações
+### 📘 Sistemas Digitais: Princípios e Aplicações
 
-Widmer, Moss e Tocci
-
----
-
-## 🚀 Projeto Integrador Sugerido
-
-### 💻 Simulador de Conversão Binária e Organização de Memória
-
-Projeto sugerido para integrar os conhecimentos estudados:
-
-### Funcionalidades:
-
-* conversão entre bases numéricas
-* operações binárias
-* simulação simples de memória
-* representação de endereçamento
+Tocci • Widmer • Moss
 
 ---
 
 ## 🎓 Relação com Disciplinas Futuras
 
-Arquitetura de Computadores I serve como base para:
+Esta disciplina serve como base para:
 
 * Sistemas Operacionais
 * Arquitetura de Computadores II
-* Programação de Baixo Nível
+* Programação em Baixo Nível
 * Organização de Sistemas Computacionais
 
 ---
 
-## 📌 Autor
+## 👨‍💻 Autor
 
 **JonnyMarcus**
