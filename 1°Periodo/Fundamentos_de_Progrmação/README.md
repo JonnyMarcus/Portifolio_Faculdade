@@ -2,28 +2,28 @@
 
 ## 📚 Sobre a Disciplina
 
-Disciplina cursada no **1º período** do curso de Ciência da Computação, com foco na construção da base lógica e computacional necessária para o desenvolvimento em programação.
+Disciplina cursada no **1º período de Computer Science Ciência da Computação**, responsável pela construção da base lógica e computacional necessária para o desenvolvimento em programação.
 
-Fundamentos de Programação representa o primeiro contato estruturado com resolução de problemas computacionais, algoritmos e implementação em linguagem C, desenvolvendo a capacidade de transformar raciocínio lógico em soluções executáveis.
+Fundamentos de Programação representa o primeiro contato estruturado com resolução de problemas computacionais, algoritmos e implementação em linguagem **C**, desenvolvendo a capacidade de transformar raciocínio lógico em soluções executáveis.
 
-A disciplina evolui desde conceitos elementares até manipulação de memória, funções, vetores, matrizes, estruturas e arquivos.
+A disciplina evolui desde conceitos elementares até manipulação de memória, funções, vetores, estruturas e arquivos.
 
 ---
 
 ## 🎯 Objetivos da Disciplina
 
-* Desenvolver raciocínio lógico computacional
-* Aprender a estruturar algoritmos
-* Compreender sintaxe e funcionamento da linguagem C
-* Resolver problemas progressivamente mais complexos
-* Construir base sólida para disciplinas futuras
+* desenvolver raciocínio lógico computacional
+* aprender a estruturar algoritmos
+* compreender sintaxe e funcionamento da linguagem C
+* resolver problemas progressivamente mais complexos
+* construir base sólida para disciplinas futuras
 
 ---
 
 ## 📂 Estrutura do Repositório
 
-```bash
-fundamentos_programacao/
+```bash id="fund01"
+Fundamentos_Programacao/
 │
 ├── README.md
 │
@@ -40,31 +40,25 @@ fundamentos_programacao/
 
 ---
 
-## 📖 Estrutura Aula por Aula
+## 📖 Estrutura dos Conteúdos
 
-### 📌 Introdução à Lógica e Algoritmos
+### 🔹 Introdução à Lógica e Algoritmos
+
+* lógica computacional
+* entrada e saída de dados
+* variáveis
+* operadores
+* estrutura sequencial
+
+Arquivos:
 
 * Lista 1 — Lógica
 * Lista 2 — Itens Fundamentais
 * Lista 3 — Estrutura Sequencial
 
-### Conceitos abordados:
-
-* algoritmo
-* entrada e saída de dados
-* variáveis
-* operadores
-* sequência lógica
-
 ---
 
-### 📌 Estruturas Condicionais
-
-* Lista 4
-* Lista 4.1
-* Lista 4.2
-
-### Conceitos abordados:
+### 🔹 Estruturas Condicionais
 
 * if
 * else
@@ -72,14 +66,15 @@ fundamentos_programacao/
 * operadores relacionais
 * operadores lógicos
 
+Arquivos:
+
+* Lista 4
+* Lista 4.1
+* Lista 4.2
+
 ---
 
-### 📌 Estruturas de Repetição
-
-* Lista 5
-* Lista 5.1
-
-### Conceitos abordados:
+### 🔹 Estruturas de Repetição
 
 * while
 * do while
@@ -87,77 +82,75 @@ fundamentos_programacao/
 * contadores
 * acumuladores
 
+Arquivos:
+
+* Lista 5
+* Lista 5.1
+
 ---
 
-### 📌 Funções
-
-* Lista 6
-* Lista 6.1
-* Lista 7
-* Lista 7.1
-
-### Conceitos abordados:
+### 🔹 Funções
 
 * modularização
 * passagem por valor
 * retorno de função
 * reutilização de código
 
+Arquivos:
+
+* Lista 6
+* Lista 6.1
+* Lista 7
+* Lista 7.1
+
 ---
 
-### 📌 Ponteiros e Memória
-
-* Lista 7 — Ponteiros
-* Ponteiros
-* Pilha de Execução de Funções
-* Passagem por parâmetro por valor
-* Passagem por parâmetro por referência
-
-### Conceitos abordados:
+### 🔹 Ponteiros e Memória
 
 * endereçamento
 * ponteiros
 * memória
-* stack
-* passagem de parâmetros
+* pilha de execução
+* passagem por referência
+
+Arquivos:
+
+* Lista 7 — Ponteiros
+* Ponteiros
+* Pilha de Execução de Funções
 
 ---
 
-### 📌 Vetores e Matrizes
-
-* Lista 8 — Vetor
-* Lista 8.1 — Matriz
-* Lista 8.2 — Vetor com Função
-* Lista 8.3 — Cadeia de Caracteres
-
-### Conceitos abordados:
+### 🔹 Vetores e Matrizes
 
 * arrays unidimensionais
 * arrays bidimensionais
 * strings
 * manipulação de índices
 
+Arquivos:
+
+* Lista 8 — Vetor
+* Lista 8.1 — Matriz
+* Lista 8.2 — Vetor com Função
+* Lista 8.3 — Cadeia de Caracteres
+
 ---
 
-### 📌 Estruturas (struct)
-
-* Lista 9
-* Notas de Aula — Estruturas
-
-### Conceitos abordados:
+### 🔹 Estruturas (struct)
 
 * struct
 * agrupamento de dados
 * modelagem de informações
 
+Arquivos:
+
+* Lista 9
+* Notas de Aula — Estruturas
+
 ---
 
-### 📌 Arquivos
-
-* Lista 10
-* Notas de Aula — Arquivos
-
-### Conceitos abordados:
+### 🔹 Arquivos
 
 * fopen
 * fclose
@@ -165,11 +158,14 @@ fundamentos_programacao/
 * fscanf
 * persistência de dados
 
+Arquivos:
+
+* Lista 10
+* Notas de Aula — Arquivos
+
 ---
 
 ## 📈 Evolução da Disciplina
-
-A disciplina apresenta uma progressão clara:
 
 ### Início
 
@@ -193,57 +189,61 @@ A disciplina apresenta uma progressão clara:
 
 ## 🧠 Conceitos Fundamentais Aprendidos
 
-* Algoritmos
-* Estruturas de controle
-* Modularização
-* Memória e ponteiros
-* Vetores e matrizes
-* Structs
-* Arquivos em C
+✅ algoritmos
+✅ estruturas de controle
+✅ modularização
+✅ memória e ponteiros
+✅ vetores e matrizes
+✅ structs
+✅ arquivos em C
 
 ---
 
 ## 🚀 Relação com Disciplinas Futuras
 
-Fundamentos de Programação é a base direta para:
+Fundamentos de Programação é base direta para:
 
 * Estruturas de Dados
 * Programação Orientada a Objetos
-* Algoritmos Avançados
+* Algoritmos
 * Sistemas Operacionais
 
 ---
 
-## 💡 Projeto Integrador Sugerido
+## 💡 Projeto Integrador da Disciplina
 
-### 📋 Sistema de Gerenciamento de Tarefas em C
+### 📋 Sistema de Cadastro de Alunos em C
 
-Projeto ideal para integrar todos os conhecimentos da disciplina:
+Projeto proposto para consolidar os principais conhecimentos da disciplina.
 
-### Funcionalidades:
+Funcionalidades:
 
-* cadastrar tarefas
-* editar tarefas
-* remover tarefas
-* marcar como concluída
+* cadastrar alunos
+* listar alunos
+* buscar por matrícula
+* editar dados
+* remover registros
+* calcular média da turma
 * salvar em arquivo
 
-### Conceitos aplicados:
+Conceitos aplicados:
 
 * struct
-* ponteiros
 * funções
-* arquivos
 * vetores
-
-### Evolução futura:
-
-Esse projeto pode crescer e se transformar em sistemas maiores ao longo da graduação.
+* arquivos
+* organização lógica
 
 ---
 
 ## 🎓 Importância na Formação
 
-Esta disciplina representa a base da construção do pensamento computacional e da capacidade de resolver problemas por meio de programação.
+Esta disciplina representa a base da construção do pensamento computacional e da capacidade de resolver problemas através da programação.
 
-Grande parte das disciplinas futuras depende diretamente da maturidade construída aqui.
+Grande parte da maturidade em desenvolvimento adquirida nas disciplinas futuras depende diretamente do domínio construído aqui.
+
+---
+
+## 👨‍💻 Autor
+
+**JonnyMarcus**
