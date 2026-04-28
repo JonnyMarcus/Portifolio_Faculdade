@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <string.h>
+
+#define MAX_ALUNOS 100
+
 typedef struct aluno{
     char nome[100];
     int matricula;
@@ -7,8 +11,41 @@ typedef struct aluno{
     float media;
 }Aluno;
 
-void CadastrarAluno(){
-    printf("ALuno Cadastrado\n");
+
+
+void CadastrarAluno(Aluno alunos[],int *quantidade){
+    if(*quantidade>=MAX_ALUNOS){
+        printf("Limite de Alunos atingidos!\n");
+        return;
+    }
+    Aluno novo_Aluno;
+
+    printf("\n=== Cadastro de Aluno ===\n");
+
+    printf("Matricula: ");
+    scanf("%d",&novo_Aluno.matricula);
+
+    printf("\n");
+    getchar();
+
+    printf("Nome: ");
+    fgets(novo_Aluno.nome,100,stdin);
+    novo_Aluno.nome[strcspn(novo_Aluno.nome, "\n")] = '\0';
+
+    printf("Nota 1: ");
+    scanf("%f",&novo_Aluno.nota_1);
+    printf("\n");
+
+    printf("Nota 2:" );
+    scanf("%f",&novo_Aluno.nota_2);
+    printf("\n");
+
+    novo_Aluno.media =((novo_Aluno.nota_1 + novo_Aluno.nota_2)/2);
+
+    
+    alunos[*quantidade] = novo_Aluno;
+    (*quantidade)++;
+
 }
 void ListarAluno(){
     printf("Listar ALunos\n");
@@ -21,7 +58,9 @@ void CalculandoMediaTurma(){
 }
 
 int main(){
-int opcao;
+    Aluno alunos[MAX_ALUNOS];
+    int quantidade = 0;
+    int opcao;
 
 do{
     printf("\n===== SISTEMA DE CADASTRO DE ALUNOS =====\n");
@@ -36,7 +75,7 @@ switch (opcao)
 {
 case 1:
     printf("\n");
-    CadastrarAluno();
+    CadastrarAluno(alunos, &quantidade);
     break;
 case 2:
     printf("\n");
