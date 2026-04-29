@@ -1,134 +1,93 @@
-# 🔢 Sistema de Operações com Conjuntos em C
+# 🧠 Sistema de Operações com Conjuntos em Python
 
 ## 📚 Sobre o Projeto
 
-Projeto integrador desenvolvido para aplicar de forma prática os conceitos fundamentais estudados em **Matemática Discreta**, com foco em teoria dos conjuntos e operações matemáticas discretas.
+Projeto desenvolvido para aplicar conceitos fundamentais da disciplina de **Matemática Discreta** utilizando Python.
 
-O sistema permite trabalhar com dois conjuntos numéricos e executar operações clássicas utilizadas em matemática discreta, aproximando a teoria estudada da implementação computacional.
+O sistema realiza operações básicas entre conjuntos, permitindo ao usuário inserir elementos e visualizar resultados matemáticos de forma prática.
 
 ---
 
 ## 🎯 Objetivos do Projeto
 
-* Aplicar conceitos de teoria dos conjuntos
-* Trabalhar raciocínio lógico em programação
-* Implementar operações matemáticas discretas em C
-* Consolidar estruturas básicas de dados e funções
+* aplicar teoria de conjuntos em programação
+* desenvolver raciocínio lógico
+* utilizar estruturas nativas do Python
+* representar operações matemáticas computacionalmente
 
 ---
 
 ## ⚙️ Funcionalidades
 
-* 📌 União entre conjuntos
-* 📌 Interseção entre conjuntos
-* 📌 Diferença entre conjuntos
-* 📌 Produto cartesiano
-* 📌 Verificação de pertinência de elemento
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash id="y9n4wd"
-sistema_conjuntos/
-│
-├── README.md
-└── main.c
-```
+* união entre conjuntos
+* interseção
+* diferença
+* verificação de pertinência
+* verificação de subconjunto
+* cardinalidade
 
 ---
 
 ## 🧠 Conceitos Aplicados
 
-### ✅ Teoria dos conjuntos
+### ✅ conjuntos (`set`)
 
-### ✅ Lógica matemática
+### ✅ funções
 
-### ✅ Comparação de elementos
+### ✅ entrada de dados
 
-### ✅ Operações discretas
-
----
-
-## 💻 Conceitos de Programação Utilizados
-
-### ✅ Vetores
-
-### ✅ Funções
-
-### ✅ Estruturas condicionais
-
-### ✅ Estruturas de repetição
-
----
-
-## 💡 Exemplo de Funcionamento
-
-Entrada:
-
-```bash id="z3p7tk"
-A = {1,2,3}
-B = {2,3,4}
-```
-
-Saída esperada:
-
-```bash id="wvj1q6"
-União = {1,2,3,4}
-Interseção = {2,3}
-Diferença A-B = {1}
-```
+### ✅ operadores matemáticos
 
 ---
 
 ## 📈 Relação com a Disciplina
 
-Este projeto integra diretamente os conteúdos de:
+Este projeto trabalha diretamente com:
 
-* teoria dos conjuntos
-* lógica de comparação
-* operações discretas
+* teoria de conjuntos
+* operações entre conjuntos
+* cardinalidade
+* pertinência
+* subconjuntos
+
+---
+
+## 🖥️ Exemplo de Uso
+
+### Entrada
+
+```text id="5ghjlwm"
+Conjunto A: 1 2 3
+Conjunto B: 3 4 5
+```
+
+---
+
+### Saída
+
+```text id="3qgr65"
+União: {1, 2, 3, 4, 5}
+Interseção: {3}
+Diferença A-B: {1, 2}
+Diferença B-A: {4, 5}
+```
 
 ---
 
 ## 🚀 Como Executar
 
-Compilar:
-
-```bash id="j4k9nq"
-gcc main.c -o conjuntos
+```bash id="5nmg6h"
+python main.py
 ```
-
-Executar:
-
-```bash id="w6s3rf"
-./conjuntos
-```
-
-No Windows:
-
-```bash id="s8v5pl"
-conjuntos.exe
-```
-
----
-
-## 💡 Possíveis Evoluções Futuras
-
-* relações binárias
-* matrizes booleanas
-* funções matemáticas
-* grafos simples
 
 ---
 
 ## 🎓 Importância Acadêmica
 
-Este projeto representa a aplicação computacional direta de conceitos fundamentais de Matemática Discreta, fortalecendo o raciocínio lógico e a abstração matemática aplicada à computação.
+Projeto introdutório que consolida os fundamentos da Matemática Discreta e serve de base para estudos futuros em lógica, relações e grafos.
 
 ---
 
 ## 📌 Autor
 
 **JonnyMarcus**
-
