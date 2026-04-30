@@ -1,93 +1,188 @@
-# 🧠 Sistema de Operações com Conjuntos em Python
+# 📘 Discrete Math Toolkit
 
-## 📚 Sobre o Projeto
+Projeto desenvolvido em Python com interface gráfica para aplicação prática dos principais conteúdos estudados em Matemática Discreta.
 
-Projeto desenvolvido para aplicar conceitos fundamentais da disciplina de **Matemática Discreta** utilizando Python.
-
-O sistema realiza operações básicas entre conjuntos, permitindo ao usuário inserir elementos e visualizar resultados matemáticos de forma prática.
+O sistema reúne operações matemáticas fundamentais em um ambiente visual interativo, permitindo trabalhar com conjuntos, relações, lógica proposicional, grafos, visualizações matemáticas e exportação de resultados.
 
 ---
 
-## 🎯 Objetivos do Projeto
+# 🚀 Objetivo do Projeto
 
-* aplicar teoria de conjuntos em programação
-* desenvolver raciocínio lógico
-* utilizar estruturas nativas do Python
-* representar operações matemáticas computacionalmente
+Aplicar conceitos teóricos de Matemática Discreta em um sistema computacional funcional, consolidando conteúdos da disciplina por meio de implementação prática.
+
+O projeto foi estruturado para demonstrar:
+
+* organização modular de código
+* separação por áreas matemáticas
+* interface gráfica interativa
+* persistência de resultados
+* visualização matemática
+* geração de documentos
 
 ---
 
-## ⚙️ Funcionalidades
+# 📂 Estrutura do Projeto
 
-* união entre conjuntos
+```text
+Matematica_Discreta/
+│── interface.py
+│── conjuntos.py
+│── relacoes.py
+│── logica.py
+│── grafos.py
+│── arquivo.py
+│── pdf_export.py
+│── grafo_visual.py
+│── venn_visual.py
+│── tabela_verdade.py
+│── historico.txt
+│── README.md
+```
+
+---
+
+# 📌 Módulos Implementados
+
+---
+
+# 🧮 Conjuntos
+
+Operações implementadas:
+
+* união
 * interseção
 * diferença
-* verificação de pertinência
-* verificação de subconjunto
-* cardinalidade
+* diferença simétrica
+
+## Recursos extras
+
+* diagrama de Venn automático
 
 ---
 
-## 🧠 Conceitos Aplicados
+# 🔗 Relações
 
-### ✅ conjuntos (`set`)
+Operações implementadas:
 
-### ✅ funções
-
-### ✅ entrada de dados
-
-### ✅ operadores matemáticos
+* produto cartesiano
+* verificação reflexiva
 
 ---
 
-## 📈 Relação com a Disciplina
+# ⚡ Lógica Proposicional
 
-Este projeto trabalha diretamente com:
+Operações implementadas:
 
-* teoria de conjuntos
-* operações entre conjuntos
-* cardinalidade
-* pertinência
-* subconjuntos
+* AND
+* OR
+* NOT
+* implicação
+
+## Recurso extra
+
+* tabela verdade automática
 
 ---
 
-## 🖥️ Exemplo de Uso
+# 🌐 Grafos
 
-### Entrada
+Operações implementadas:
 
-```text id="5ghjlwm"
-Conjunto A: 1 2 3
-Conjunto B: 3 4 5
+* criação de grafo
+* adição de arestas
+* cálculo do grau de vértice
+
+## Recurso extra
+
+* visualização gráfica do grafo
+
+---
+
+# 💾 Histórico e Persistência
+
+O sistema registra automaticamente cada operação realizada.
+
+## Recursos disponíveis
+
+* salvar histórico
+* visualizar histórico
+* limpar histórico
+
+---
+
+# 📄 Exportação
+
+Resultados podem ser exportados automaticamente em PDF.
+
+---
+
+# 🖥️ Interface Gráfica
+
+Interface construída com Tkinter organizada em abas:
+
+* Conjuntos
+* Relações
+* Lógica
+* Grafos
+
+---
+
+# 🛠️ Bibliotecas Utilizadas
+
+* Python
+* Tkinter
+* Matplotlib
+* ReportLab
+
+---
+
+# 📚 Conceitos Aplicados
+
+Durante o desenvolvimento foram utilizados:
+
+* modularização
+* manipulação de arquivos
+* estruturas matemáticas
+* visualização gráfica
+* geração de documentos
+* lógica computacional
+
+---
+
+# ▶️ Como Executar
+
+## Instalar dependências
+
+```bash
+pip install matplotlib reportlab
+```
+
+## Executar sistema
+
+```bash
+python interface.py
 ```
 
 ---
 
-### Saída
+# 📈 Evolução do Projeto
 
-```text id="3qgr65"
-União: {1, 2, 3, 4, 5}
-Interseção: {3}
-Diferença A-B: {1, 2}
-Diferença B-A: {4, 5}
-```
+O projeto evoluiu progressivamente:
 
----
-
-## 🚀 Como Executar
-
-```bash id="5nmg6h"
-python main.py
-```
+* operações básicas
+* interface gráfica
+* persistência
+* visualização matemática
+* exportação de resultados
 
 ---
 
-## 🎓 Importância Acadêmica
+# 🎯 Finalidade Acadêmica
 
-Projeto introdutório que consolida os fundamentos da Matemática Discreta e serve de base para estudos futuros em lógica, relações e grafos.
+Projeto desenvolvido como aplicação prática da disciplina de Matemática Discreta no curso de Ciência da Computação.
 
 ---
 
-## 📌 Autor
+# 👨‍💻 Autor
 
-**JonnyMarcus**
+**Jonny Marcus**
