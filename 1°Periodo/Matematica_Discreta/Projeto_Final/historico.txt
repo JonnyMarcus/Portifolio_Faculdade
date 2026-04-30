@@ -1,0 +1,27 @@
+União: {'4', '3', '1', '6', '5', '2'}
+Interseção: set()
+Diferença: {'3', '1', '2'}
+Interseção: set()
+União: {'3', '5', '4', '1', '6', '2'}
+Diferença: {'1', '2'}
+Diferença Simétrica: {'1', '6', '5', '2'}
+Interseção: {'4', '3'}
+Produto Cartesiano: {('2', 'a'), ('1', 'a'), ('2', 'b'), ('1', 'b')}
+Reflexiva: True
+Produto Cartesiano: {('2', 'a'), ('1', 'a'), ('2', 'b'), ('1', 'b')}
+Reflexiva: True
+Reflexiva: True
+Reflexiva: True
+Reflexiva: True
+Reflexiva: True
+Produto Cartesiano: {('2', 'c'), ('3', 'a'), ('2', 'a'), ('3', 'b'), ('2', 'b'), ('1', 'c'), ('1', 'a'), ('1', 'b'), ('3', 'c')}
+Reflexiva: True
+AND: False
+NOT: False
+OR: True
+Implicação: False
+Grafo: {'a ': [' d']}
+Grau de a : 1
+Grafo: {'a ': [' d'], 'B': ['D']}
+Grau de B: 1
+Grafo: {'a ': [' d'], 'B': ['D', 'D']}
