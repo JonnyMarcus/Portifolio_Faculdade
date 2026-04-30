@@ -1,11 +1,11 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 
 from Conjuntos import *
 from Relacoes import *
 from Logica import *
 from Grafos import *
-from arquivo import salvar_resultado
+from Arquivo import salvar_resultado, ler_historico, limpar_historico
 
 
 
@@ -13,9 +13,11 @@ def converter_conjunto(texto):
     return set(texto.split())
 
 
+
 def calcular_uniao():
     a = converter_conjunto(entry_a.get())
     b = converter_conjunto(entry_b.get())
+
     resultado = uniao(a, b)
 
     texto = f"União: {resultado}"
@@ -27,6 +29,7 @@ def calcular_uniao():
 def calcular_produto_cartesiano():
     a = converter_conjunto(entry_a_rel.get())
     b = converter_conjunto(entry_b_rel.get())
+
     resultado = produto_cartesiano(a, b)
 
     texto = f"Produto Cartesiano: {resultado}"
@@ -36,10 +39,10 @@ def calcular_produto_cartesiano():
 
 
 
-
 def calcular_and():
     p = entry_p.get() == "True"
     q = entry_q.get() == "True"
+
     resultado = proposicao_and(p, q)
 
     texto = f"AND: {resultado}"
@@ -65,15 +68,28 @@ def adicionar_no_grafo():
 
 
 
+def mostrar_historico():
+    historico = ler_historico()
+    messagebox.showinfo("Histórico", historico)
+
+
+def apagar_historico():
+    limpar_historico()
+    messagebox.showinfo("Histórico", "Histórico apagado com sucesso.")
+
+
+
+
 janela = tk.Tk()
 janela.title("Discrete Math Toolkit")
-janela.geometry("700x500")
+janela.geometry("700x550")
 janela.configure(bg="#f0f0f0")
 
 style = ttk.Style()
 style.configure("TNotebook.Tab", font=("Arial", 11), padding=[15, 8])
 
 abas = ttk.Notebook(janela)
+
 
 
 aba_conjuntos = tk.Frame(abas)
@@ -174,7 +190,23 @@ resultado_grafo = tk.Label(aba_grafos, text="Grafo", font=("Arial", 12))
 resultado_grafo.grid(row=3, column=0, columnspan=2, pady=20)
 
 
-
 abas.pack(expand=1, fill="both")
+
+frame_botoes = tk.Frame(janela)
+frame_botoes.pack(pady=10)
+
+tk.Button(
+    frame_botoes,
+    text="Ver Histórico",
+    width=15,
+    command=mostrar_historico
+).pack(side="left", padx=10)
+
+tk.Button(
+    frame_botoes,
+    text="Limpar Histórico",
+    width=15,
+    command=apagar_historico
+).pack(side="left", padx=10)
 
 janela.mainloop()
