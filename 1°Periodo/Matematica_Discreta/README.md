@@ -1,238 +1,158 @@
-# 🔢 Matemática Discreta
+# 📘 Discrete Math Toolkit
 
-## 📚 Sobre a Disciplina
+Sistema desenvolvido em Python para aplicação prática dos principais conceitos estudados em Matemática Discreta, reunindo operações com conjuntos, relações, lógica proposicional, grafos básicos e interface gráfica.
 
-Disciplina fundamental da formação em Ciência da Computação, voltada ao desenvolvimento do raciocínio matemático aplicado à computação.
-
-Matemática Discreta introduz a linguagem formal utilizada em demonstrações, estruturas matemáticas discretas e conceitos essenciais para modelagem computacional, servindo como base para algoritmos, estruturas de dados, teoria da computação e análise lógica de problemas.
+O projeto foi estruturado para transformar conteúdos teóricos da disciplina em uma ferramenta interativa capaz de demonstrar visualmente conceitos fundamentais da matemática aplicada à computação.
 
 ---
 
-## 🎯 Objetivos da Disciplina
+# 🎯 Objetivo do Projeto
 
-Ao final da disciplina, o estudante deve ser capaz de:
-
-* compreender a linguagem matemática formal
-* interpretar demonstrações matemáticas
-* aplicar lógica e estruturas discretas em problemas computacionais
-* analisar relações, funções e grafos
-* desenvolver rigor matemático aplicado à computação
+Construir uma aplicação acadêmica capaz de reunir em um único sistema os principais conteúdos introdutórios de Matemática Discreta, permitindo execução prática de operações estudadas em sala de aula.
 
 ---
 
-## 📖 Conteúdo Desenvolvido
+# 📚 Conteúdos Aplicados
+
+Ao longo do projeto são trabalhados conceitos como:
+
+* teoria dos conjuntos
+* relações
+* produto cartesiano
+* lógica proposicional
+* grafos básicos
+* manipulação de arquivos
+* interface gráfica
 
 ---
 
-## 📌 Teoria dos Conjuntos
+# ⚙️ Funcionalidades Implementadas
 
-* operações entre conjuntos
+---
+
+# 📌 Operações com Conjuntos
+
 * união
 * interseção
 * diferença
+* diferença simétrica
+* verificação de subconjunto
+
+---
+
+# 📌 Relações
+
 * produto cartesiano
-
-### Conceitos assimilados:
-
-* pertencimento
-* inclusão
-* cardinalidade
+* estrutura inicial para propriedades de relações
 
 ---
 
-## 📌 Lógica Matemática
+# 📌 Lógica Proposicional
 
-* proposições
-* conectivos lógicos
-* tabelas verdade
-* equivalências
-
-### Conceitos assimilados:
-
-* implicação
-* bicondicional
-* negação
-* tautologias
+* operador AND
+* base para expansão de operadores lógicos
 
 ---
 
-## 📌 Métodos de Demonstração
+# 📌 Grafos Básicos
 
-* demonstração direta
-* contraposição
-* contradição
-
-### Conceitos assimilados:
-
-* construção formal de provas
-* encadeamento lógico
+* criação de vértices
+* adição de arestas
+* representação simples de grafos
 
 ---
 
-## 📌 Indução Matemática
+# 📌 Histórico de Operações
 
-* passo base
-* hipótese de indução
-* passo indutivo
-
-### Conceitos assimilados:
-
-* demonstrações recursivas
-* validação para infinitos casos
+* salvamento automático em arquivo
+* leitura do histórico
+* limpeza do histórico
 
 ---
 
-## 📌 Relações
+# 🖥️ Interface Gráfica
 
-* relações binárias
-* reflexividade
-* simetria
-* transitividade
+Interface construída com Tkinter organizada em abas:
 
-### Conceitos assimilados:
-
-* equivalência
-* ordem parcial
+* Conjuntos
+* Relações
+* Lógica
+* Grafos
 
 ---
 
-## 📌 Funções
+# 📂 Estrutura do Projeto
 
-* domínio
-* contradomínio
-* imagem
-
-### Conceitos assimilados:
-
-* injetividade
-* sobrejetividade
-* bijetividade
-
----
-
-## 📌 Somatórias e Produtórias
-
-* notação sigma
-* notação produtória
-
-### Conceitos assimilados:
-
-* manipulação algébrica
-* simplificação de expressões
+```text id="j8s3xm"
+Matematica_Discreta/
+│── interface.py
+│── main.py
+│── conjuntos.py
+│── relacoes.py
+│── logica.py
+│── grafos.py
+│── arquivo.py
+│── historico.txt
+│── README.md
+```
 
 ---
 
-## 📌 Recorrência
+# 🧠 Conceitos de Programação Aplicados
 
-* relações de recorrência
-* definição recursiva
-
-### Conceitos assimilados:
-
-* progressões recursivas
-* modelagem computacional
-
----
-
-## 📌 Contagem
-
-* princípio multiplicativo
-* princípio aditivo
-* permutação
-* combinação
-
-### Conceitos assimilados:
-
-* análise combinatória
-* contagem de possibilidades
+* modularização de código
+* funções
+* estruturas de dados nativas
+* manipulação de arquivos
+* interface gráfica
+* organização em múltiplos módulos
 
 ---
 
-## 📌 Introdução à Teoria de Grafos
+# ▶️ Execução
 
-* vértices
-* arestas
-* caminhos
-* conexidade
+## Versão gráfica
 
-### Conceitos assimilados:
+```bash id="r1x9af"
+python interface.py
+```
 
-* representação de redes
-* modelagem de estruturas computacionais
+## Versão terminal
 
----
-
-## 📈 Evolução do Conhecimento
-
-A disciplina evolui de fundamentos formais até estruturas aplicáveis diretamente em computação.
-
-### Início
-
-linguagem formal e conjuntos
-
-### Intermediário
-
-lógica e demonstrações
-
-### Avançado
-
-funções, recorrência, contagem e grafos
+```bash id="t4y6qn"
+python main.py
+```
 
 ---
 
-## 🧠 Principais Conhecimentos Desenvolvidos
+# 📈 Evolução Técnica do Projeto
 
-* raciocínio lógico formal
-* construção de demonstrações
-* modelagem matemática discreta
-* base teórica para algoritmos
+O projeto foi desenvolvido em etapas progressivas:
 
----
-
-## 📚 Bibliografia Principal
-
-### Discrete Mathematics and Its Applications
-
-Kenneth H. Rosen
-
-### Fundamentos Matemáticos para a Ciência da Computação
-
-J. L. Gersting
-
-### Elementos de Matemática Discreta para Computação
-
-A. Gomide e J. Stolfi
+* etapa 1 → conjuntos
+* etapa 2 → relações
+* etapa 3 → lógica e grafos
+* etapa 4 → interface gráfica
+* etapa 5 → persistência em arquivo
 
 ---
 
-## 🚀 Projeto Integrador Sugerido
+# 🔮 Possíveis Melhorias Futuras
 
-### 📌 Simulador de Grafos e Relações em Python
-
-Projeto para integrar os conceitos da disciplina:
-
-### Funcionalidades:
-
-* criação de conjuntos
-* operações entre conjuntos
-* verificação de relações
-* representação de grafos simples
-* análise de conectividade
+* exportação de resultados em PDF
+* tabelas verdade completas
+* verificação automática de propriedades de relações
+* visualização gráfica de grafos
+* diagramas de Venn
 
 ---
 
-## 🎓 Relação com Disciplinas Futuras
+# 🎓 Aplicação Acadêmica
 
-Matemática Discreta serve como base para:
-
-* Estruturas de Dados
-* Algoritmos
-* Teoria da Computação
-* Banco de Dados
-* Inteligência Artificial
+Projeto desenvolvido como aplicação prática dos conteúdos da disciplina de Matemática Discreta no curso de Ciência da Computação.
 
 ---
 
-## 📌 Autor
+# 👨‍💻 Autor
 
-**JonnyMarcus**
+**Jonny Marcus**
