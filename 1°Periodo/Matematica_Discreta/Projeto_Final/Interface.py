@@ -6,7 +6,7 @@ from Relacoes import *
 from Logica import *
 from Grafos import *
 from Arquivo import salvar_resultado, ler_historico, limpar_historico
-
+from Pdf_export import exportar_pdf
 
 
 def converter_conjunto(texto):
@@ -129,6 +129,10 @@ def apagar_historico():
     limpar_historico()
     messagebox.showinfo("Histórico", "Histórico apagado com sucesso.")
 
+def gerar_pdf():
+    historico = ler_historico()
+
+    arquivo = exportar_pdf(historico)
 
 
 
