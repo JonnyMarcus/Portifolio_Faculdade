@@ -2,12 +2,12 @@
 
 #define CONVERSAO_H
 
-int binario_decimal( int bin );
-int decimal_binario(int num);
-int binario_hexadecimal(int bin );
-int hexadecimal_binario(int bin );
-int binario_octal(int bin );
-int octal_binario(int oct);
+void binario_decimal( );
+void decimal_binario( );
+void binario_hexadecimal( );
+void hexadecimal_binario( );
+void binario_octal( );
+void octal_binario( );
 
 
 #endif CONVERSAO_H

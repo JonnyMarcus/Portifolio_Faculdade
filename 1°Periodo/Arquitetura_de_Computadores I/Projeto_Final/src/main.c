@@ -43,6 +43,7 @@ int main(){
 
                     switch(aux) {
                         case 1: printf("Binario -> Decimal\n"); break;
+                            
                         case 2: printf("Decimal -> Binario\n"); break;
                         case 3: printf("Binario -> Hex\n"); break;
                         case 4: printf("Hex -> Binario\n"); break;
