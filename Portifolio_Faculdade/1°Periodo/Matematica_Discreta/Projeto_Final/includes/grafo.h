@@ -21,6 +21,6 @@ void BFS(grafo *g, int inicio);
 
 void DFS(grafo *g, int inicio);
 
-void menu_grafo(grafo *g);
+void menu_grafo();
 
 #endif

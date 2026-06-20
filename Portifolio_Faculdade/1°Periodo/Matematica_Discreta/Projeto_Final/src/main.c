@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include "conjuntos.h"
+#include "logica.h"
+#include "relacoes.h"
+#include "historico.h"
+#include "grafo.h"
 
 int main()
 {
@@ -19,6 +24,26 @@ int main()
 
         switch (opcao)
         {
+        case 1:
+            menu_conjuntos();
+            break;
+        case 2:
+            menu_relacoes();
+            break;
+        case 3:
+            menu_logica();
+            break;
+        case 4:
+            menu_grafo();
+            break;
+        case 5:
+            menu_historico();
+            break;
+        case 0:
+            printf("Saindo...\n");
+            break;
+        default:
+            printf("Opcao invalida\n");
         }
 
     } while (opcao != 0);
