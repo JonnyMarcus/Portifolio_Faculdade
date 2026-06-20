@@ -86,7 +86,7 @@ void BFS(grafo *g, int inicio)
     }
 }
 
-DFS(grafo *g, int inicio)
+void DFS(grafo *g, int inicio)
 {
     int visitado[MAX_ELEMENTOS] = {0};
     int pilha[MAX_ELEMENTOS];
