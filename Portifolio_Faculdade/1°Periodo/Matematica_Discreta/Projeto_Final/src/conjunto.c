@@ -59,6 +59,62 @@ void pertinencia(int A[], int nA, int x)
     else
         printf("%d nao pertence ao conjunto.\n", x);
 }
+
 void menu_conjuntos()
 {
+    int opcao, A[MAX_ELEMENTOS], B[MAX_ELEMENTOS], nA, nB, x;
+
+    printf("Quantos elementos tem A? ");
+    scanf("%d", &nA);
+    for (int i = 0; i < nA; i++)
+    {
+        printf("A[%d]: ", i);
+        scanf("%d", &A[i]);
+    }
+
+    printf("Quantos elementos tem B? ");
+    scanf("%d", &nB);
+    for (int i = 0; i < nB; i++)
+    {
+        printf("B[%d]: ", i);
+        scanf("%d", &B[i]);
+    }
+
+    do
+    {
+        printf("\n=== CONJUNTOS ===\n");
+        printf("1 - Uniao\n");
+        printf("2 - Intersecao\n");
+        printf("3 - Diferenca\n");
+        printf("4 - Diferenca Simetrica\n");
+        printf("5 - Pertinencia\n");
+        printf("0 - Voltar\n");
+        printf("Opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            uniao(A, nA, B, nB);
+            break;
+        case 2:
+            intersecao(A, nA, B, nB);
+            break;
+        case 3:
+            diferenca(A, nA, B, nB);
+            break;
+        case 4:
+            diferenca_simetrica(A, nA, B, nB);
+            break;
+        case 5:
+            printf("Digite o elemento: ");
+            scanf("%d", &x);
+            pertinencia(A, nA, x);
+            break;
+        case 0:
+            break;
+        default:
+            printf("Opcao invalida\n");
+        }
+    } while (opcao != 0);
 }
