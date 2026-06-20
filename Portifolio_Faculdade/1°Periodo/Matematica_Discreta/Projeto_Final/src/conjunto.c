@@ -41,3 +41,14 @@ void diferenca(int A[], int nA, int B[], int nB)
             printf("%d ", A[i]);
     printf("}\n");
 }
+void diferenca_simetrica(int A[], int nA, int B[], int nB)
+{
+    printf("Diferenca Simetrica: { ");
+    for (int i = 0; i < nA; i++)
+        if (!contem(B, nB, A[i]))
+            printf("%d ", A[i]);
+    for (int i = 0; i < nB; i++)
+        if (!contem(A, nA, B[i]))
+            printf("%d ", B[i]);
+    printf("}\n");
+}
