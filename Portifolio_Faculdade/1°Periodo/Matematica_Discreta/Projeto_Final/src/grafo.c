@@ -1,2 +1,19 @@
 #include <stdio.h>
 #include "grafo.h"
+
+void cria_grafo(grafo *g)
+{
+
+    for (int i = 0; i < MAX_ELEMENTOS; i++)
+    {
+        for (int j = 0; j < MAX_ELEMENTOS; j++)
+        {
+            g->adj[i][j] = 0;
+        }
+    }
+    g->nVertices = 0;
+    printf("grafo criado com sucesso");
+}
+void inseri_vertice(grafo *g)
+{
+}
