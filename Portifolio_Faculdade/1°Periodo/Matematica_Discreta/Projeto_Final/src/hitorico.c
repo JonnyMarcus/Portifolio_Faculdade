@@ -40,4 +40,27 @@ void limpar_historico()
 }
 void menu_historico()
 {
+    int opcao;
+
+    do
+    {
+        printf("\n=== HISTORICO ===\n");
+        printf("1 - Consultar Historico\n2 - Limpar Historico\n0 - Voltar\n");
+        printf("Opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            consulta_historico();
+            break;
+        case 2:
+            limpar_historico();
+            break;
+        case 0:
+            break;
+        default:
+            printf("Opcao invalida\n");
+        }
+    } while (opcao != 0);
 }
