@@ -25,3 +25,11 @@ void uniao(int A[], int nA, int B[], int nB)
         printf("%d ", resultado[i]);
     printf("}\n");
 }
+void intersecao(int A[], int nA, int B[], int nB)
+{
+    printf("Intersecao: { ");
+    for (int i = 0; i < nA; i++)
+        if (contem(B, nB, A[i]))
+            printf("%d ", A[i]);
+    printf("}\n");
+}
