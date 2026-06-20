@@ -116,4 +116,44 @@ DFS(grafo *g, int inicio)
 }
 void menu_grafo()
 {
+    int opcao;
+    grafo g;
+    cria_grafo(&g);
+
+    do
+    {
+        printf("\n=== GRAFOS ===\n");
+        printf("1 - Inserir Vertice\n2 - Inserir Aresta\n3 - Grau do Vertice\n4 - BFS\n5 - DFS\n0 - Voltar\n");
+        printf("Opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            inseri_vertice(&g);
+            break;
+        case 2:
+            inserir_aresta(&g);
+            break;
+        case 3:
+            grau_vertice(&g);
+            break;
+        case 4:
+            printf("Vertice inicial: ");
+            int ini;
+            scanf("%d", &ini);
+            BFS(&g, ini);
+            break;
+        case 5:
+            printf("Vertice inicial: ");
+            int ini2;
+            scanf("%d", &ini2);
+            DFS(&g, ini2);
+            break;
+        case 0:
+            break;
+        default:
+            printf("Opcao invalida\n");
+        }
+    } while (opcao != 0);
 }
