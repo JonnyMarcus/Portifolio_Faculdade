@@ -52,3 +52,10 @@ void diferenca_simetrica(int A[], int nA, int B[], int nB)
             printf("%d ", B[i]);
     printf("}\n");
 }
+void pertinencia(int A[], int nA, int x)
+{
+    if (contem(A, nA, x))
+        printf("%d pertence ao conjunto.\n", x);
+    else
+        printf("%d nao pertence ao conjunto.\n", x);
+}
