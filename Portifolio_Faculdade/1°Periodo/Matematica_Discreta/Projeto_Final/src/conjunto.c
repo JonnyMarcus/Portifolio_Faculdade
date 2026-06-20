@@ -59,3 +59,6 @@ void pertinencia(int A[], int nA, int x)
     else
         printf("%d nao pertence ao conjunto.\n", x);
 }
+void menu_conjuntos()
+{
+}
