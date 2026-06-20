@@ -16,4 +16,13 @@ void cria_grafo(grafo *g)
 }
 void inseri_vertice(grafo *g)
 {
+    if (g->nVertices == MAX_ELEMENTOS)
+    {
+        printf("ERRO matrix cheia \n");
+    }
+    else
+    {
+        g->nVertices++;
+        printf("Vertice inserida com sucesso");
+        }
 }
