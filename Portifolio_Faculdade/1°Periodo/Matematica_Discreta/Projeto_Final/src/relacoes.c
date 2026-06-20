@@ -28,3 +28,23 @@ void verifica_reflexiva(int A[][100], int nA)
     else
         printf("A relacao NAO E reflexiva\n");
 }
+void verifica_simetrica(int A[][100], int nA)
+{
+    int simetrica = 1;
+
+    for (int i = 0; i < nA; i++)
+    {
+        for (int j = 0; j < nA; j++)
+        {
+            if (A[i][j] != A[j][i])
+            {
+                simetrica = 0;
+            }
+        }
+    }
+
+    if (simetrica == 1)
+        printf("A relacao E simetrica\n");
+    else
+        printf("A relacao NAO E simetrica\n");
+}
