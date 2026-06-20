@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include "conjuntos.h"
+
+int contem(int v[], int n, int x)
+{
+    for (int i = 0; i < n; i++)
+        if (v[i] == x)
+            return 1;
+    return 0;
+}
+void uniao(int A[], int nA, int B[], int nB)
+{
+    int resultado[MAX_ELEMENTOS];
+    int nR = 0;
+
+    for (int i = 0; i < nA; i++)
+        resultado[nR++] = A[i];
+
+    for (int i = 0; i < nB; i++)
+        if (!contem(resultado, nR, B[i]))
+            resultado[nR++] = B[i];
+
+    printf("Uniao: { ");
+    for (int i = 0; i < nR; i++)
+        printf("%d ", resultado[i]);
+    printf("}\n");
+}
