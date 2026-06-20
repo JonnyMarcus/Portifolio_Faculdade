@@ -48,4 +48,47 @@ void tabela_verdade()
 
 void menu_logica()
 {
+    int opcao, p, q;
+
+    printf("Digite p (0 ou 1): ");
+    scanf("%d", &p);
+    printf("Digite q (0 ou 1): ");
+    scanf("%d", &q);
+
+    do
+    {
+        printf("\n=== LOGICA ===\n");
+        printf("1 - AND\n2 - OR\n3 - NOT\n4 - XOR\n5 - Implicacao\n6 - Bicondicional\n7 - Tabela Verdade\n0 - Voltar\n");
+        printf("Opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            printf("Resultado: %d\n", op_and(p, q));
+            break;
+        case 2:
+            printf("Resultado: %d\n", op_or(p, q));
+            break;
+        case 3:
+            printf("Resultado: %d\n", op_not(p));
+            break;
+        case 4:
+            printf("Resultado: %d\n", op_xor(p, q));
+            break;
+        case 5:
+            printf("Resultado: %d\n", op_implicacao(p, q));
+            break;
+        case 6:
+            printf("Resultado: %d\n", op_bicondicional(p, q));
+            break;
+        case 7:
+            tabela_verdade();
+            break;
+        case 0:
+            break;
+        default:
+            printf("Opcao invalida\n");
+        }
+    } while (opcao != 0);
 }
