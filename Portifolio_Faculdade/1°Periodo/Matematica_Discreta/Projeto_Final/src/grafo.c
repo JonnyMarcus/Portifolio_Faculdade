@@ -40,3 +40,20 @@ void inserir_aresta(grafo *g)
         printf("Aresta inserida com sucesso\n");
     }
 }
+
+void grau_vertice(grafo *g)
+{
+    int v;
+    printf("Digite o vertice: ");
+    scanf("%d", &v);
+
+    int grau = 0;
+    for (int i = 0; i < MAX_ELEMENTOS; i++)
+    {
+        if (g->adj[v][i] == 1)
+        {
+            grau++;
+        }
+    }
+    printf("Grau do vertice %d: %d\n", v, grau);
+}

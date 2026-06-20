@@ -17,9 +17,9 @@ void inseri_aresta(grafo *g);
 
 void grau_vertice(grafo *g);
 
-void BFS(grafo *g);
+void BFS(grafo *g, int inicio);
 
-void DFS(grafo *g);
+void DFS(grafo *g, int inicio);
 
 void menu_grafo(grafo *g);
 
