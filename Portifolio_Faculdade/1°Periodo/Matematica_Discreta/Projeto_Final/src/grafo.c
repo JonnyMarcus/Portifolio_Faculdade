@@ -24,5 +24,19 @@ void inseri_vertice(grafo *g)
     {
         g->nVertices++;
         printf("Vertice inserida com sucesso");
-        }
+    }
+}
+void inserir_aresta(grafo *g)
+{
+    int i, j;
+    scanf("%d %d", &i, &j);
+
+    if (i >= g->nVertices || j >= g->nVertices)
+        printf("Vertice invalido\n");
+    else
+    {
+        g->adj[i][j] = 1;
+        g->adj[j][i] = 1;
+        printf("Aresta inserida com sucesso\n");
+    }
 }
