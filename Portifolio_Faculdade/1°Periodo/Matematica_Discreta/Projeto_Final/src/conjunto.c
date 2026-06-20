@@ -33,3 +33,11 @@ void intersecao(int A[], int nA, int B[], int nB)
             printf("%d ", A[i]);
     printf("}\n");
 }
+void diferenca(int A[], int nA, int B[], int nB)
+{
+    printf("Diferenca (A - B): { ");
+    for (int i = 0; i < nA; i++)
+        if (!contem(B, nB, A[i]))
+            printf("%d ", A[i]);
+    printf("}\n");
+}
