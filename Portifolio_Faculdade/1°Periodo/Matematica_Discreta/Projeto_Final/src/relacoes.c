@@ -72,4 +72,53 @@ void verifica_transitiva(int A[][MAX_ELEMENTOS], int nA)
 }
 void menu_relacoes()
 {
+    int opcao;
+    int A[MAX_ELEMENTOS][MAX_ELEMENTOS] = {0};
+    int B[MAX_ELEMENTOS], nB, nA;
+
+    printf("Tamanho do conjunto: ");
+    scanf("%d", &nA);
+
+    printf("Digite a matriz de adjacencia (%dx%d) linha por linha:\n", nA, nA);
+    for (int i = 0; i < nA; i++)
+        for (int j = 0; j < nA; j++)
+            scanf("%d", &A[i][j]);
+
+    do
+    {
+        printf("\n=== RELACOES ===\n");
+        printf("1 - Produto Cartesiano\n2 - Verificar Reflexiva\n3 - Verificar Simetrica\n4 - Verificar Transitiva\n0 - Voltar\n");
+        printf("Opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            printf("Tamanho de B: ");
+            scanf("%d", &nB);
+            for (int i = 0; i < nB; i++)
+            {
+                printf("B[%d]: ", i);
+                scanf("%d", &B[i]);
+            }
+            int Av[MAX_ELEMENTOS];
+            for (int i = 0; i < nA; i++)
+                Av[i] = i;
+            produto_cartesiano(Av, nA, B, nB);
+            break;
+        case 2:
+            verifica_reflexiva(A, nA);
+            break;
+        case 3:
+            verifica_simetrica(A, nA);
+            break;
+        case 4:
+            verifica_transitiva(A, nA);
+            break;
+        case 0:
+            break;
+        default:
+            printf("Opcao invalida\n");
+        }
+    } while (opcao != 0);
 }
