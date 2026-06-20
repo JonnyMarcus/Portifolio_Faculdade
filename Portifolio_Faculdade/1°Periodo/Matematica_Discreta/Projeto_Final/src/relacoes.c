@@ -11,9 +11,20 @@ void produto_cartesiano(int A[], int nA, int B[], int nB)
         }
     }
 }
-void verifica_reflexivo(int A[][], int nA)
+void verifica_reflexiva(int A[][100], int nA)
 {
+    int reflexiva = 1; // assume que é reflexiva
+
     for (int i = 0; i < nA; i++)
     {
+        if (A[i][i] == 0)
+        {
+            reflexiva = 0;
+        }
     }
+
+    if (reflexiva == 1)
+        printf("A relacao E reflexiva\n");
+    else
+        printf("A relacao NAO E reflexiva\n");
 }
