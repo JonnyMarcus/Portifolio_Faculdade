@@ -66,7 +66,10 @@ void verifica_transitiva(int A[][MAX_ELEMENTOS], int nA)
     }
 
     if (transitiva == 1)
-        printf("A relacao transitivo \n");
+        printf("A relacao E transitiva\n");
     else
-        printf("A relacao NAO Etransitivo transitivo\n");
+        printf("A relacao NAO E transitiva\n");
+}
+void menu_relacoes()
+{
 }
