@@ -57,3 +57,63 @@ void grau_vertice(grafo *g)
     }
     printf("Grau do vertice %d: %d\n", v, grau);
 }
+void BFS(grafo *g, int inicio)
+{
+    int visitado[MAX_ELEMENTOS] = {0};
+    int fila[MAX_ELEMENTOS];
+    int frente = 0, tras = 0;
+
+    fila[tras++] = inicio;
+    visitado[inicio] = 1;
+
+    while (frente != tras)
+    {
+        // 1. remove o primeiro da fila
+        int v = fila[frente++];
+
+        // 2. imprime
+        printf("%d ", v);
+
+        // 3. percorre vizinhos
+        for (int i = 0; i < g->nVertices; i++)
+        {
+            if (g->adj[v][i] == 1 && visitado[i] == 0)
+            {
+                visitado[i] = 1;
+                fila[tras++] = i;
+            }
+        }
+    }
+}
+
+DFS(grafo *g, int inicio)
+{
+    int visitado[MAX_ELEMENTOS] = {0};
+    int pilha[MAX_ELEMENTOS];
+    int topo = 0;
+
+    pilha[topo++] = inicio;
+    visitado[inicio] = 1;
+
+    while (topo > 0)
+    {
+        // 1. remove o primeiro da fila
+        int v = pilha[--topo];
+
+        // 2. imprime
+        printf("%d ", v);
+
+        // 3. percorre vizinhos
+        for (int i = 0; i < g->nVertices; i++)
+        {
+            if (g->adj[v][i] == 1 && visitado[i] == 0)
+            {
+                visitado[i] = 1;
+                pilha[topo++] = i;
+            }
+        }
+    }
+}
+void menu_grafo()
+{
+}
