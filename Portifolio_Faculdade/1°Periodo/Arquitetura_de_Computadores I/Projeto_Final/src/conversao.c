@@ -149,6 +149,56 @@ void octal_binario()
     }
     printf("\n");
 }
+
 void menu_conversao()
 {
+    int opcao;
+
+    do
+    {
+        printf("\n=== CONVERSAO ===\n");
+        printf("1. converte decimal para binario\n");
+        printf("2. converte binario para decimal\n");
+        printf("3. converte binario para octal\n");
+        printf("4. converte octal para binario\n");
+        printf("5. converte binario para hexadicimal\n");
+        printf("6. converte hexadecimal para binario\n");
+        printf("0. sair\n");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
+            decimal_binario();
+            break;
+
+        case 2:
+            binario_decimal();
+            break;
+
+        case 3:
+            binario_octal();
+            break;
+
+        case 4:
+            octal_binario();
+            break;
+
+        case 5:
+            binario_hexadecimal();
+            break;
+
+        case 6:
+            hexadecimal_binario();
+            break;
+
+        case 0:
+            printf("Saindo...\n");
+            break;
+
+        default:
+            printf("Opcao invalida!\n");
+        }
+
+    } while (opcao != 0);
 }
