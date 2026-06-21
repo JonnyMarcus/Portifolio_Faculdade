@@ -1,75 +1,120 @@
 # 💻 Simulador de Conversão Numérica e Memória
 
+Projeto desenvolvido em **C** com o objetivo de aplicar, de forma prática, conceitos fundamentais estudados em **Arquitetura de Computadores I**, como sistemas de numeração, representação da informação e organização básica de memória.
+
+O sistema permite realizar conversões entre diferentes bases numéricas e simular aspectos relacionados ao armazenamento e representação digital dos dados, aproximando a teoria do funcionamento real dos computadores.
+
+---
+
 ## 📚 Sobre o Projeto
 
-Projeto integrador desenvolvido para aplicar de forma prática os principais conceitos estudados em **Arquitetura de Computadores I**.
+Computadores trabalham internamente com informações representadas em formato binário. Este projeto foi desenvolvido para demonstrar como números são convertidos, armazenados e interpretados pelo hardware, permitindo visualizar conceitos fundamentais da arquitetura dos sistemas computacionais.
 
-A proposta do sistema é permitir a conversão entre diferentes bases numéricas e apresentar informações relacionadas à representação digital e organização básica de memória.
-
-Este projeto conecta diretamente teoria e prática, mostrando como números e informações são interpretados internamente por um sistema computacional.
+Além de servir como ferramenta de aprendizado, o projeto busca consolidar conhecimentos sobre representação de dados e organização da memória.
 
 ---
 
-## 🎯 Objetivos do Projeto
+## 🎯 Objetivos
 
-* Aplicar sistemas de numeração estudados na disciplina
-* Trabalhar conversão entre bases numéricas
-* Relacionar representação binária com memória
-* Simular conceitos básicos de armazenamento digital
+- Aplicar conceitos de sistemas de numeração;
+- Praticar algoritmos de conversão entre bases;
+- Entender como números são representados digitalmente;
+- Relacionar bits, bytes e capacidade de armazenamento;
+- Simular conceitos básicos de endereçamento e memória.
 
 ---
 
-## ⚙️ Funcionalidades
+## ✨ Funcionalidades
 
-* 📌 Conversão decimal para binário
-* 📌 Conversão decimal para hexadecimal
-* 📌 Conversão binário para decimal
-* 📌 Soma binária simples
-* 📌 Cálculo de bits necessários
-* 📌 Estimativa de bytes ocupados
-* 📌 Simulação simples de endereçamento
+### 🔢 Conversões Numéricas
+
+- Decimal → Binário
+- Decimal → Octal
+- Decimal → Hexadecimal
+- Binário → Decimal
+- Octal → Decimal
+- Hexadecimal → Decimal
+- Binário → Octal
+- Octal → Binário
+- Binário → Hexadecimal
+- Hexadecimal → Binário
+
+### ➕ Operações Binárias
+
+- Soma binária simples
+- Cálculo da quantidade de bits necessários
+- Conversão entre bits e bytes
+
+### 🧠 Simulações de Memória
+
+- Estimativa do espaço ocupado em memória
+- Simulação simples de endereçamento
+- Visualização da representação binária dos dados
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-```bash id="wd7g4m"
+```text
 simulador_numerico_memoria/
 │
-├── README.md
-└── main.c
+├── main.c
+├── conversoes.c
+├── conversoes.h
+├── memoria.c
+├── memoria.h
+├── utils.c
+├── utils.h
+└── README.md
 ```
 
 ---
 
 ## 🧠 Conceitos Aplicados
 
-### ✅ Sistemas de numeração
+### Sistemas de Numeração
 
-### ✅ Conversão de bases
+- Binário
+- Octal
+- Decimal
+- Hexadecimal
 
-### ✅ Aritmética binária
+### Representação da Informação
 
-### ✅ Representação da informação
+- Bits
+- Bytes
+- Palavras de memória
+- Representação binária
 
-### ✅ Organização de memória
+### Aritmética Binária
+
+- Soma binária
+- Conversões entre bases
+
+### Organização de Memória
+
+- Endereçamento
+- Capacidade de armazenamento
+- Representação dos dados em memória
 
 ---
 
 ## 💡 Exemplo de Funcionamento
 
-Entrada:
+### Entrada
 
-```bash id="mw0v2r"
-25
+```text
+Número decimal: 25
 ```
 
-Saída esperada:
+### Saída
 
-```bash id="r8f6yp"
+```text
 Decimal: 25
 Binário: 11001
+Octal: 31
 Hexadecimal: 19
+
 Bits necessários: 5
 Bytes ocupados: 1
 ```
@@ -78,52 +123,85 @@ Bytes ocupados: 1
 
 ## 📈 Relação com a Disciplina
 
-Este projeto integra conteúdos de:
+Este projeto integra conteúdos estudados em:
 
-* sistemas binários
-* representação de dados
-* memória computacional
-* armazenamento digital
+- Sistemas de Numeração;
+- Representação de Dados;
+- Organização de Memória;
+- Armazenamento Digital;
+- Conversão entre Bases;
+- Arquitetura de Computadores.
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- Linguagem C
+- Biblioteca `stdio.h`
+- Biblioteca `stdlib.h`
+- Biblioteca `math.h`
+- Programação Estruturada
+- Modularização do código
 
 ---
 
 ## 🚀 Como Executar
 
-Compilar:
+### Compilar
 
-```bash id="d5q7ke"
-gcc main.c -o simulador
+```bash
+gcc *.c -o simulador
 ```
 
-Executar:
+### Executar
 
-```bash id="vr4m2k"
+Linux:
+
+```bash
 ./simulador
 ```
 
-No Windows:
+Windows:
 
-```bash id="yt4q1a"
+```bash
 simulador.exe
 ```
 
 ---
 
-## 💡 Possíveis Evoluções Futuras
+## 🚀 Possíveis Melhorias
 
-* complemento de dois
-* tabela ASCII
-* simulação de cache simples
-* visualização de memória por endereços
+- Complemento de dois;
+- Conversão IEEE 754;
+- Tabela ASCII completa;
+- Operações lógicas binárias (AND, OR, XOR, NOT);
+- Simulação de cache;
+- Simulação de registradores;
+- Visualização de memória por endereços;
+- Interface gráfica;
+- Geração de relatórios em arquivo.
 
 ---
 
 ## 🎓 Importância Acadêmica
 
-Este projeto representa a aplicação prática de conceitos fundamentais de Arquitetura de Computadores, aproximando a teoria do funcionamento real dos sistemas computacionais.
+Este projeto foi desenvolvido para consolidar os conceitos fundamentais de Arquitetura de Computadores, proporcionando uma visão prática da representação e manipulação de dados em sistemas computacionais.
+
+Além disso, o projeto reforça conhecimentos em:
+
+- Programação em C;
+- Estruturas e funções;
+- Modularização;
+- Manipulação de dados;
+- Algoritmos de conversão;
+- Organização interna dos computadores.
 
 ---
 
-## 📌 Autor
+## 👨‍💻 Autor
 
-**JonnyMarcus**
+**Jonny Marcus**
+
+Estudante de Ciência da Computação, utilizando projetos práticos para aprofundar conhecimentos em programação, arquitetura de computadores e desenvolvimento de software.
+
+⭐ Caso este projeto seja útil, considere deixar uma estrela no repositório.
