@@ -106,7 +106,30 @@ void hexadecimal_binario()
     }
     printf("\n");
 }
+void octal_binario()
+{
+    char binario[50];
 
+    printf("escreva o numero binario: ");
+    scanf("%s", binario);
+
+    printf("Binario: ");
+
+    for (int i = 0; binario[i] != '\0'; i++)
+    {
+
+        int valor;
+        if (binario[i] >= '0' && binario[i] <= '9')
+            valor = binario[i] - '0';
+        else
+            valor = binario[i] - 'A' + 10;
+        for (int j = 2; j >= 0; j--)
+        {
+            printf("%d", (valor >> j) & 1);
+        }
+    }
+    printf("\n");
+}
 void menu_conversao()
 {
 }
