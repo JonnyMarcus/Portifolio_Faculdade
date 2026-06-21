@@ -13,8 +13,7 @@ int memoria_armazenar(Memoria *mem, int endereco, int valor)
 {
     if (endereco < 0 || endereco >= TAM_MEMORIA)
     {
-        printf("  [ERRO] Endereco 0x%02X fora do intervalo (0x00 - 0x%02X).\n",
-               endereco, TAM_MEMORIA - 1);
+        printf("  [ERRO] Endereco 0x%02X fora do intervalo.\n", endereco);
         return 0;
     }
     mem->celulas[endereco] = (unsigned char)(valor & 0xFF);
@@ -45,10 +44,7 @@ void memoria_exibir_mapa(Memoria *mem, int inicio, int fim)
     {
         decimal_para_binario(mem->celulas[i], bin);
         printf("  |  0x%02X    |   %3d    | %8s |   %s   |\n",
-               i,
-               mem->celulas[i],
-               bin,
-               mem->ocupado[i] ? "S" : "N");
+               i, mem->celulas[i], bin, mem->ocupado[i] ? "S" : "N");
     }
     printf("  +----------+----------+----------+---------+\n");
 }
@@ -57,19 +53,17 @@ void memoria_calcular_espaco(int bits, int *bytes, int *palavras)
 {
     *bytes = (bits + 7) / 8;
     *palavras = (*bytes + 3) / 4;
+}
 
-    void memoria_simular_enderecos(int quantidade_bytes)
+void memoria_simular_enderecos(int quantidade_bytes)
+{
+    printf("\n  Simulacao de enderecos para %d byte(s):\n\n", quantidade_bytes);
+    printf("  Byte | Endereco\n");
+    printf("  -----|----------\n");
+    for (int i = 0; i < quantidade_bytes && i < 16; i++)
     {
-        printf("\n  Simulacao de enderecos para %d byte(s):\n\n", quantidade_bytes);
-        printf("  Byte | Endereco\n");
-        printf("  -----|----------\n");
-        for (int i = 0; i < quantidade_bytes && i < 16; i++)
-        {
-            printf("   %3d | 0x%04X\n", i + 1, i);
-        }
-        if (quantidade_bytes > 16)
-        {
-            printf("   ... (exibindo apenas os 16 primeiros enderecos)\n");
-        }
+        printf("   %3d | 0x%04X\n", i + 1, i);
     }
+    if (quantidade_bytes > 16)
+        printf("   ... (exibindo apenas os 16 primeiros enderecos)\n");
 }
