@@ -1,204 +1,212 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include "conversao.h"
+#include <math.h>
+#include "conversoes.h"
 
-void binario_decimal()
+void decimal_para_binario(int n, char *resultado)
 {
-    int decimal = 0;
-    char bin[50];
-
-    printf("escreva o numero binario: ");
-    scanf("%s", bin);
-
-    for (int i = 0; bin[i] != '\0'; i++)
+    if (n == 0)
     {
-        int bit = bin[i] - '0';
-        decimal = decimal * 2 + bit;
-    }
-    printf("\nDecimal: %d\n", decimal);
-}
-
-void decimal_binario()
-{
-    char bin[50];
-    int dec;
-    int i = 0;
-
-    printf("escreva o decimal: ");
-    scanf("%d", &dec);
-
-    if (dec == 0)
-    {
-        printf("0\n");
+        strcpy(resultado, "0");
         return;
     }
 
-    while (dec > 0)
-    {
-        bin[i++] = dec % 2;
-        dec = dec / 2;
-    }
+    char temp[65];
+    int i = 0;
+    int negativo = (n < 0);
+    if (negativo)
+        n = -n;
 
-    printf("\nBinario: ");
-    for (int j = i - 1; j >= 0; j--)
+    while (n > 0)
     {
-        printf("%d", bin[j]);
+        temp[i++] = '0' + (n % 2);
+        n /= 2;
     }
-    printf("\n");
+    if (negativo)
+        temp[i++] = '-';
+    temp[i] = '\0';
+
+    // Inverte a string
+    int len = strlen(temp);
+    for (int j = 0; j < len; j++)
+        resultado[j] = temp[len - 1 - j];
+    resultado[len] = '\0';
 }
 
-void binario_hexadecimal()
+void decimal_para_octal(int n, char *resultado)
 {
-    char bin[50];
-    char temp[50];
-    temp[0] = '\0';
+    if (n == 0)
+    {
+        strcpy(resultado, "0");
+        return;
+    }
 
-    printf("digite o numero binario: ");
-    scanf("%s", bin);
+    char temp[32];
+    int i = 0;
+    int negativo = (n < 0);
+    if (negativo)
+        n = -n;
 
+    while (n > 0)
+    {
+        temp[i++] = '0' + (n % 8);
+        n /= 8;
+    }
+    if (negativo)
+        temp[i++] = '-';
+    temp[i] = '\0';
+
+    int len = strlen(temp);
+    for (int j = 0; j < len; j++)
+        resultado[j] = temp[len - 1 - j];
+    resultado[len] = '\0';
+}
+
+void decimal_para_hex(int n, char *resultado)
+{
+    if (n == 0)
+    {
+        strcpy(resultado, "0");
+        return;
+    }
+
+    const char hex_chars[] = "0123456789ABCDEF";
+    char temp[32];
+    int i = 0;
+    int negativo = (n < 0);
+    if (negativo)
+        n = -n;
+
+    while (n > 0)
+    {
+        temp[i++] = hex_chars[n % 16];
+        n /= 16;
+    }
+    if (negativo)
+        temp[i++] = '-';
+    temp[i] = '\0';
+
+    int len = strlen(temp);
+    for (int j = 0; j < len; j++)
+        resultado[j] = temp[len - 1 - j];
+    resultado[len] = '\0';
+}
+
+int binario_para_decimal(const char *bin)
+{
+    int resultado = 0;
     int len = strlen(bin);
-    int resto = len % 4;
-    if (resto != 0)
+    for (int i = 0; i < len; i++)
     {
-        int faltam = 4 - resto;
-        for (int i = 0; i < faltam; i++)
-            strcat(temp, "0");
-        strcat(temp, bin);
-        strcpy(bin, temp);
+        if (bin[i] != '0' && bin[i] != '1')
+            return -1; // inválido
+        resultado = resultado * 2 + (bin[i] - '0');
     }
+    return resultado;
+}
 
-    printf("Hexadecimal: ");
-    for (int i = 0; bin[i] != '\0'; i += 4)
+int octal_para_decimal(const char *oct)
+{
+    int resultado = 0;
+    int len = strlen(oct);
+    for (int i = 0; i < len; i++)
     {
-        int valor = 0;
-        for (int j = 0; j < 4; j++)
-            valor = valor * 2 + (bin[i + j] - '0');
+        if (oct[i] < '0' || oct[i] > '7')
+            return -1;
+        resultado = resultado * 8 + (oct[i] - '0');
+    }
+    return resultado;
+}
 
-        if (valor < 10)
-            printf("%d", valor);
+int hex_para_decimal(const char *hex)
+{
+    int resultado = 0;
+    int len = strlen(hex);
+    for (int i = 0; i < len; i++)
+    {
+        char c = hex[i];
+        int val;
+        if (c >= '0' && c <= '9')
+            val = c - '0';
+        else if (c >= 'A' && c <= 'F')
+            val = c - 'A' + 10;
+        else if (c >= 'a' && c <= 'f')
+            val = c - 'a' + 10;
         else
-            printf("%c", valor - 10 + 'A');
+            return -1;
+        resultado = resultado * 16 + val;
     }
-    printf("\n");
+    return resultado;
 }
 
-void hexadecimal_binario()
+void binario_para_octal(const char *bin, char *resultado)
 {
-    char hexadecimal[50];
-
-    printf("escreva o numero hexadecimal: ");
-    scanf("%s", hexadecimal);
-
-    printf("Binario: ");
-
-    for (int i = 0; hexadecimal[i] != '\0'; i++)
+    int dec = binario_para_decimal(bin);
+    if (dec < 0)
     {
-
-        int valor;
-        if (hexadecimal[i] >= '0' && hexadecimal[i] <= '9')
-            valor = hexadecimal[i] - '0';
-        else
-            valor = hexadecimal[i] - 'A' + 10;
-        for (int j = 3; j >= 0; j--)
-        {
-            printf("%d", (valor >> j) & 1);
-        }
+        strcpy(resultado, "ERRO");
+        return;
     }
-    printf("\n");
-}
-void binario_octal()
-{
-    char binario[50];
-
-    printf("escreva o numero binario: ");
-    scanf("%s", binario);
-
-    printf("Octal: ");
-    int valor;
-    for (int i = 0; binario[i] != '\0'; i += 3)
-    {
-        int valor = 0;
-        for (int j = 0; j < 3; j++)
-        {
-            valor = valor * 2 + (binario[i + j] - '0');
-        }
-        printf("%d", valor);
-    }
-    printf("\n");
+    decimal_para_octal(dec, resultado);
 }
 
-void octal_binario()
+void octal_para_binario(const char *oct, char *resultado)
 {
-    char octal[50];
-
-    printf("escreva o numero octal: ");
-    scanf("%s", octal);
-
-    printf("Binario: ");
-
-    for (int i = 0; octal[i] != '\0'; i++)
+    int dec = octal_para_decimal(oct);
+    if (dec < 0)
     {
-
-        int valor;
-        if (octal[i] >= '0' && octal[i] <= '7')
-            valor = octal[i] - '0';
-        for (int j = 2; j >= 0; j--)
-        {
-            printf("%d", (valor >> j) & 1);
-        }
+        strcpy(resultado, "ERRO");
+        return;
     }
-    printf("\n");
+    decimal_para_binario(dec, resultado);
 }
 
-void menu_conversao()
+void binario_para_hex(const char *bin, char *resultado)
 {
-    int opcao;
-
-    do
+    int dec = binario_para_decimal(bin);
+    if (dec < 0)
     {
-        printf("\n=== CONVERSAO ===\n");
-        printf("1. converte decimal para binario\n");
-        printf("2. converte binario para decimal\n");
-        printf("3. converte binario para octal\n");
-        printf("4. converte octal para binario\n");
-        printf("5. converte binario para hexadicimal\n");
-        printf("6. converte hexadecimal para binario\n");
-        printf("0. sair\n");
-        scanf("%d", &opcao);
+        strcpy(resultado, "ERRO");
+        return;
+    }
+    decimal_para_hex(dec, resultado);
+}
 
-        switch (opcao)
-        {
-        case 1:
-            decimal_binario();
-            break;
+void hex_para_binario(const char *hex, char *resultado)
+{
+    int dec = hex_para_decimal(hex);
+    if (dec < 0)
+    {
+        strcpy(resultado, "ERRO");
+        return;
+    }
+    decimal_para_binario(dec, resultado);
+}
 
-        case 2:
-            binario_decimal();
-            break;
+void soma_binaria(const char *a, const char *b, char *resultado)
+{
+    int dec_a = binario_para_decimal(a);
+    int dec_b = binario_para_decimal(b);
+    if (dec_a < 0 || dec_b < 0)
+    {
+        strcpy(resultado, "ERRO");
+        return;
+    }
+    decimal_para_binario(dec_a + dec_b, resultado);
+}
 
-        case 3:
-            binario_octal();
-            break;
-
-        case 4:
-            octal_binario();
-            break;
-
-        case 5:
-            binario_hexadecimal();
-            break;
-
-        case 6:
-            hexadecimal_binario();
-            break;
-
-        case 0:
-            printf("Saindo...\n");
-            break;
-
-        default:
-            printf("Opcao invalida!\n");
-        }
-
-    } while (opcao != 0);
+int bits_necessarios(int n)
+{
+    if (n == 0)
+        return 1;
+    if (n < 0)
+        n = -n;
+    int bits = 0;
+    while (n > 0)
+    {
+        bits++;
+        n >>= 1;
+    }
+    return bits;
 }
