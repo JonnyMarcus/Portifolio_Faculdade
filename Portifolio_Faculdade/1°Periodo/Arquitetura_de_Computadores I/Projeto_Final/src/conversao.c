@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "conversoes.h"
+#include "conversao.h"
 
 void decimal_para_binario(int n, char *resultado)
 {
