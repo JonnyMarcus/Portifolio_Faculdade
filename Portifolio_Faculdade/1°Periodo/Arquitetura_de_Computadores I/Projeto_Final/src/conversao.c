@@ -108,6 +108,23 @@ void hexadecimal_binario()
 }
 void binario_octal()
 {
+    char binario[50];
+
+    printf("escreva o numero binario: ");
+    scanf("%s", binario);
+
+    printf("Octal: ");
+    int valor;
+    for (int i = 0; binario[i] != '\0'; i += 3)
+    {
+        int valor = 0;
+        for (int j = 0; j < 3; j++)
+        {
+            valor = valor * 2 + (binario[i + j] - '0');
+        }
+        printf("%d", valor);
+    }
+    printf("\n");
 }
 
 void octal_binario()
@@ -123,10 +140,8 @@ void octal_binario()
     {
 
         int valor;
-        if (octal[i] >= '0' && octal[i] <= '9')
+        if (octal[i] >= '0' && octal[i] <= '7')
             valor = octal[i] - '0';
-        else
-            valor = octal[i] - 'A' + 10;
         for (int j = 2; j >= 0; j--)
         {
             printf("%d", (valor >> j) & 1);
