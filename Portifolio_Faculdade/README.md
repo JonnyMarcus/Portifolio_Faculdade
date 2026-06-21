@@ -100,6 +100,8 @@ Proposta de aplicação real utilizando os conhecimentos da matéria.
 
 * C
 * Python
+* Assembly x86
+* Javascript
 * Git e GitHub
 * Estruturas de Dados
 * Programação Orientada a Objetos
