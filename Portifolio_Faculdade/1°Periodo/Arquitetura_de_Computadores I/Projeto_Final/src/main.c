@@ -3,6 +3,11 @@
 
 int main()
 {
+    int opcao;
+    do
+    {
+
+    } while (opcao == 0);
 
     return 0;
 }
