@@ -1,26 +1,41 @@
+<div align="center">
+
 # 🎓 Portfólio Acadêmico — JonnyMarcus
 
-Bem-vindo ao meu portfólio acadêmico de graduação em Ciência da Computação 👨‍💻
+**Ciência da Computação — UNIFEI**
 
-Este repositório reúne de forma organizada as disciplinas cursadas ao longo da graduação, incluindo materiais de aula, exercícios, projetos, trabalhos, resumos e evoluções práticas construídas durante a formação acadêmica.
+Repositório central da minha trajetória universitária: aulas, exercícios, projetos, trabalhos, resumos e evolução técnica documentados semestre a semestre.
 
-A proposta deste portfólio é transformar a trajetória universitária em um ambiente estruturado de aprendizado contínuo, documentando não apenas códigos e atividades, mas também conceitos assimilados, evolução técnica e aplicações práticas desenvolvidas ao longo do curso.
+<p>
+  <img src="https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white" alt="C">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/Status-Em%20constru%C3%A7%C3%A3o-yellow" alt="Status">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</p>
+
+</div>
 
 ---
 
-## 🎯 Objetivos do Repositório
+## 📖 Sobre
 
-* 📚 Organizar todo o conteúdo da graduação por semestre
-* 🧠 Consolidar conceitos aprendidos em cada disciplina
-* 💻 Documentar projetos e implementações desenvolvidas
-* 📈 Demonstrar evolução acadêmica e técnica
-* 💼 Construir um portfólio sólido para oportunidades profissionais
+Este repositório reúne, de forma estruturada, todo o conteúdo da minha graduação em Ciência da Computação — não como um simples arquivo morto de entregas, mas como um **ambiente vivo de aprendizado contínuo**. A proposta é documentar não só código e atividades, mas o raciocínio por trás deles: conceitos assimilados, dificuldades enfrentadas, caminhos de resolução e a evolução técnica ao longo do curso.
 
----
+## 🎯 Objetivos
 
-## 🗂️ Estrutura do Portfólio
+|     |                                                                |
+| --- | -------------------------------------------------------------- |
+| 📚  | Organizar todo o conteúdo da graduação por semestre            |
+| 🧠  | Consolidar os conceitos aprendidos em cada disciplina          |
+| 💻  | Documentar projetos e implementações desenvolvidas             |
+| 📈  | Demonstrar evolução acadêmica e técnica ao longo do tempo      |
+| 💼  | Construir um portfólio sólido para oportunidades profissionais |
 
-```bash id="vnpd8k"
+## 🗂️ Estrutura do repositório
+
+```
 Portifolio_Faculdade/
 │
 ├── README.md
@@ -35,13 +50,11 @@ Portifolio_Faculdade/
 └── 8_periodo/
 ```
 
-Cada período contém as disciplinas organizadas individualmente.
+Cada período contém as disciplinas cursadas naquele semestre, organizadas individualmente.
 
----
+## 📚 Estrutura de cada disciplina
 
-## 📚 Estrutura de Cada Disciplina
-
-```bash id="jw4pq7"
+```
 disciplina/
 │
 ├── README.md
@@ -53,103 +66,63 @@ disciplina/
 └── resumos/
 ```
 
-Cada matéria contém:
+O README de cada matéria descreve: a disciplina e o semestre em que foi cursada, a organização aula por aula, os materiais em PDF, as atividades desenvolvidas, os conceitos aprendidos, a evolução técnica ao longo do semestre e uma proposta de projeto integrador.
 
-* descrição da disciplina
-* semestre em que foi cursada
-* organização aula por aula
-* materiais em PDF
-* atividades desenvolvidas
-* conceitos aprendidos
-* evolução técnica
-* proposta de projeto integrador
+## 📈 Metodologia — os 6 pilares de cada disciplina
 
----
+| #   | Pilar                           | O que cobre                                                           |
+| --- | ------------------------------- | --------------------------------------------------------------------- |
+| 1   | **Sobre a disciplina**          | Descrição da matéria, semestre cursado e objetivo acadêmico           |
+| 2   | **Estrutura aula por aula**     | Materiais organizados cronologicamente, com PDFs, listas e atividades |
+| 3   | **Organização prática**         | Separação clara entre teoria, exercícios e implementações             |
+| 4   | **Evolução de aprendizado**     | Registro da progressão dos conteúdos ao longo da disciplina           |
+| 5   | **Conceitos absorvidos**        | Síntese dos principais conhecimentos técnicos adquiridos              |
+| 6   | **Projeto integrador sugerido** | Proposta de aplicação real usando os conhecimentos da matéria         |
 
-## 📈 Metodologia de Organização
+## 📌 A graduação em três fases
 
-Cada disciplina é documentada seguindo seis pilares principais:
+```
+Início           →       Meio                      →     Avançado
+Lógica, matemática      Estruturas de dados,             Projetos completos,
+e programação           modelagem, POO e                 integração de áreas,
+fundamental             arquitetura de computadores       engenharia de software
+```
 
-### 1. Sobre a disciplina
+## 💻 Tecnologias e áreas cobertas
 
-Descrição da matéria, semestre cursado e objetivo acadêmico.
+<p>
+  <img src="https://img.shields.io/badge/C-blue" alt="C">
+  <img src="https://img.shields.io/badge/Python-blue" alt="Python">
+  <img src="https://img.shields.io/badge/Git%20%26%20GitHub-orange" alt="Git e GitHub">
+  <img src="https://img.shields.io/badge/Estruturas%20de%20Dados-lightgrey" alt="Estruturas de Dados">
+  <img src="https://img.shields.io/badge/POO-lightgrey" alt="POO">
+  <img src="https://img.shields.io/badge/Banco%20de%20Dados-lightgrey" alt="Banco de Dados">
+  <img src="https://img.shields.io/badge/Algoritmos-lightgrey" alt="Algoritmos">
+  <img src="https://img.shields.io/badge/Arquitetura%20de%20Computadores-lightgrey" alt="Arquitetura de Computadores">
+</p>
 
-### 2. Estrutura aula por aula
+## 🧠 Filosofia de construção
 
-Materiais organizados cronologicamente com PDFs, listas e atividades.
+Mais do que reunir soluções prontas, este portfólio busca deixar visível:
 
-### 3. Organização prática
+- as dificuldades enfrentadas em cada etapa
+- os caminhos percorridos até a resolução
+- o amadurecimento técnico ao longo do curso
+- a clareza no processo de construção do conhecimento — não só o resultado final
 
-Separação entre teoria, exercícios e implementações.
+## 🚀 Propósito
 
-### 4. Evolução de aprendizado
-
-Registro da progressão dos conteúdos ao longo da disciplina.
-
-### 5. Conceitos absorvidos
-
-Síntese dos principais conhecimentos técnicos adquiridos.
-
-### 6. Projeto integrador sugerido
-
-Proposta de aplicação real utilizando os conhecimentos da matéria.
-
----
-
-## 💻 Tecnologias Utilizadas ao Longo da Graduação
-
-* C
-* Python
-* Git e GitHub
-* Estruturas de Dados
-* Programação Orientada a Objetos
-* Banco de Dados
-* Algoritmos
-* Arquitetura de Computadores
+Este repositório não tem caráter apenas de armazenamento — é também um espaço de evolução profissional. Cada disciplina representa uma etapa da construção técnica em Ciência da Computação, conectando teoria, prática e o desenvolvimento progressivo do raciocínio computacional.
 
 ---
 
-## 🚀 Propósito Acadêmico e Profissional
-
-Este repositório não tem apenas caráter de armazenamento, mas também de evolução profissional.
-
-Cada disciplina representa uma etapa da construção técnica em Ciência da Computação, conectando teoria, prática e desenvolvimento progressivo de raciocínio computacional.
-
----
-
-## 📌 Organização por Evolução
-
-### Início da graduação
-
-Base lógica, matemática e programação fundamental.
-
-### Meio da graduação
-
-Estruturas, modelagem de sistemas, orientação a objetos e arquitetura.
-
-### Avançado
-
-Projetos completos, integração de áreas, visão de engenharia de software e especialização.
-
----
-
-## 🧠 Filosofia de Construção
-
-Além de registrar soluções prontas, este portfólio também busca mostrar:
-
-* dificuldades enfrentadas
-* caminhos de resolução
-* amadurecimento técnico
-* clareza na construção do conhecimento
-
----
+<div align="center">
 
 ## 📍 Autor
 
 **JonnyMarcus**
 Estudante de Ciência da Computação — UNIFEI
 
----
+⭐ _Este repositório representa a construção contínua da minha formação acadêmica e técnica em computação._
 
-⭐ Este repositório representa a construção contínua da minha formação acadêmica e técnica em computação.
-
+</div>
