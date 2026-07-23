@@ -52,16 +52,16 @@ A ideia é simples de entender e de usar: o dispositivo fica pendurado no peito 
 ## 🏗️ Arquitetura
 
 ```
-┌─────────────┐     ┌──────────────────┐     ┌────────────────────┐
-│   Câmera    │────▶│  Detector YOLOv8  │────▶│  Motor de Prioridade │
-│ (USB / CSI) │     │   (obstáculos)    │     │  (urgente / aviso)   │
+┌─────────────┐     ┌──────────────────┐     ┌──────────────────────┐
+│   Câmera    │────▶│ Detector YOLOv8 │────▶│  Motor de Prioridade │
+│ (USB / CSI) │     │   (obstáculos)   │     │  (urgente / aviso)   │
 └─────────────┘     └──────────────────┘     └──────────┬───────────┘
        │                                                 │
-       │            ┌──────────────────┐                 ▼
+       │             ┌──────────────────┐                 ▼
        └───────────▶│   VLM (Ollama)    │        ┌───────────────┐
-        a cada N s   │ descrição de cena │───────▶│  Texto-para-  │
-                     └──────────────────┘         │      Fala      │
-                                                   └───────────────┘
+        a cada N s   │ descrição de cena│───────▶│  Texto-para-  │
+                     └──────────────────┘         │      Fala     │
+                                                  └───────────────┘
 ```
 
 ## 📂 Estrutura do projeto
