@@ -1,111 +1,50 @@
 # 💰 Engenharia Econômica
 
-## 📚 Sobre a Disciplina
+Repositório de estudos da disciplina **Engenharia Econômica** — matemática financeira, análise de investimentos, fluxo de caixa, rentabilidade e tomada de decisão econômica aplicada a projetos.
 
-Repositório destinado ao estudo dos principais conceitos de Engenharia Econômica, com foco em matemática financeira, análise de investimentos, fluxo de caixa, rentabilidade e tomada de decisão econômica aplicada a projetos.
+<p align="left">
+  <img src="https://img.shields.io/badge/Matem%C3%A1tica%20Financeira-lightgrey" alt="Matemática Financeira">
+  <img src="https://img.shields.io/badge/An%C3%A1lise%20de%20Investimentos-lightgrey" alt="Análise de Investimentos">
+</p>
 
----
+## 📖 Sobre a disciplina
+
+Estudo dos métodos econômicos utilizados para análise de viabilidade financeira de investimentos, financiamentos e projetos, conectando matemática financeira com decisões reais de engenharia.
 
 ## 🎯 Objetivo
 
 Compreender métodos econômicos utilizados para análise de viabilidade financeira de investimentos, financiamentos e projetos.
 
----
+## 📚 Conteúdo estudado
 
-## 📂 Conteúdo Estudado
+| Bloco                         | Tópicos                                                                          |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| **Matemática financeira**     | Juros simples e compostos · taxas equivalentes · taxa efetiva e nominal          |
+| **Relações de equivalência**  | P ↔ F · P ↔ A · F ↔ A · gradientes                                               |
+| **Fluxo de caixa**            | Entradas e saídas · representação temporal · séries uniformes                    |
+| **Critérios de investimento** | Payback · VPL · VA · TIR · TMA                                                   |
+| **Análise de projetos**       | Alternativas de investimento · vidas diferentes · análise de risco e de cenários |
+| **Depreciação e tributação**  | Depreciação linear · imposto de renda · lucro tributável                         |
+| **Financiamentos**            | Sistema SAC · sistema PRICE · amortização                                        |
+| **Rentabilidade**             | Rentabilidade do empreendimento e do acionista                                   |
 
-### 🔹 Matemática Financeira
+## 📂 Estrutura do repositório
 
-* juros simples
-* juros compostos
-* taxas equivalentes
-* taxa efetiva e nominal
-
----
-
-### 🔹 Relações de Equivalência
-
-* P ↔ F
-* P ↔ A
-* F ↔ A
-* gradientes
-
----
-
-### 🔹 Fluxo de Caixa
-
-* entradas e saídas
-* representação temporal
-* séries uniformes
-
----
-
-### 🔹 Critérios de Investimento
-
-* Payback
-* VPL
-* VA
-* TIR
-* TMA
-
----
-
-### 🔹 Análise de Projetos
-
-* alternativas de investimento
-* vidas diferentes
-* análise de risco
-* análise de cenários
-
----
-
-### 🔹 Depreciação e Tributação
-
-* depreciação linear
-* imposto de renda
-* lucro tributável
-
----
-
-### 🔹 Financiamentos
-
-* sistema SAC
-* sistema PRICE
-* amortização
-
----
-
-### 🔹 Rentabilidade
-
-* rentabilidade do empreendimento
-* rentabilidade do acionista
-
----
-
-## 📂 Estrutura do Repositório
-
+```text
 Engenharia_Economica/
-│
 ├── README.md
 ├── Materiais/
 └── Projetos/
+```
 
----
+## 💻 Projeto integrador
 
-## 🚀 Tecnologias Relacionadas
+**Sistema de Análise de Investimentos em C** — cadastro de projetos, registro de fluxo de caixa e cálculo de Payback, VPL e TIR, com persistência em arquivo.
 
-* Excel
-* Python
-* C
+## 🚀 Tecnologias relacionadas
 
----
-
-## 🎓 Aplicação Acadêmica
-
-A disciplina conecta matemática financeira com análise real de projetos e decisões econômicas.
-
----
+Excel · Python · C
 
 ## 👨‍💻 Autor
 
-JonnyMarcus
+**Jonny Marcus**

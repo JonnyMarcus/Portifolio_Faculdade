@@ -1,135 +1,57 @@
 # 🐍 Programação Orientada a Objetos
 
-## 📚 Sobre a Disciplina
+Repositório de estudos da disciplina **Programação Orientada a Objetos** — modelagem orientada a objetos, implementação em Python e desenvolvimento de aplicações reais.
 
-Repositório destinado ao estudo dos principais conceitos de **Programação Orientada a Objetos**, com foco na modelagem orientada a objetos, implementação em Python e desenvolvimento de aplicações reais utilizando os princípios fundamentais da orientação a objetos.
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/UML-lightgrey" alt="UML">
+</p>
 
----
+## 📖 Sobre a disciplina
+
+Estudo de como modelar sistemas utilizando orientação a objetos e implementar aplicações estruturadas em Python, com foco em organização, reutilização e manutenção de código.
 
 ## 🎯 Objetivo
 
-Compreender como modelar sistemas utilizando orientação a objetos e implementar aplicações estruturadas em Python com organização, reutilização e manutenção de código.
+Compreender como modelar sistemas utilizando orientação a objetos e implementar aplicações estruturadas em Python.
 
----
+## 📚 Conteúdo estudado
 
-## 📂 Conteúdo Estudado
+| Bloco                      | Tópicos                                                                    |
+| -------------------------- | -------------------------------------------------------------------------- |
+| **Fundamentos de OO**      | Paradigma orientado a objetos · abstração · encapsulamento · modularização |
+| **Objetos e classes**      | Atributos · métodos · instanciamento · construtores                        |
+| **Modelagem UML**          | Diagrama de classes · relacionamentos · associação · herança               |
+| **Herança**                | Herança simples e múltipla                                                 |
+| **Polimorfismo**           | Sobrescrita de métodos · comportamento dinâmico                            |
+| **Classes abstratas**      | Abstração de comportamento · métodos abstratos                             |
+| **Tratamento de exceções** | `try` / `except` / `finally` · validação de erros                          |
+| **Sobrecarga**             | Métodos e operadores                                                       |
+| **Interface gráfica**      | Aplicações com interface visual                                            |
+| **Estudos de caso**        | Implementação de aplicações reais em Python                                |
 
-### 🔹 Fundamentos de Orientação a Objetos
+## 📂 Estrutura do repositório
 
-* paradigma orientado a objetos
-* abstração
-* encapsulamento
-* modularização
-
----
-
-### 🔹 Objetos e Classes
-
-* atributos
-* métodos
-* instanciamento
-* construtores
-
----
-
-### 🔹 Modelagem UML
-
-* diagrama de classes
-* relacionamentos
-* associação
-* herança
-
----
-
-### 🔹 Herança
-
-* herança simples
-* herança múltipla
-
----
-
-### 🔹 Polimorfismo
-
-* sobrescrita de métodos
-* comportamento dinâmico
-
----
-
-### 🔹 Classes Abstratas
-
-* abstração de comportamento
-* métodos abstratos
-
----
-
-### 🔹 Tratamento de Exceções
-
-* try
-* except
-* finally
-* validação de erros
-
----
-
-### 🔹 Sobrecarga
-
-* métodos
-* operadores
-
----
-
-### 🔹 Interface Gráfica
-
-* aplicações com interface visual
-
----
-
-### 🔹 Estudos de Caso
-
-* implementação de aplicações reais em Python
-
----
-
-## 📂 Estrutura do Repositório
-
-```bash id="poo884"
+```text
 Programacao_Orientada_Objetos/
-│
 ├── README.md
 ├── Exercicios/
 ├── Projetos/
 └── Aulas/
 ```
 
----
+## 💻 Projeto relacionado
 
-## 💻 Projeto Relacionado à Disciplina
+**Sistema de Streaming Musical em Python** — aplica classes, herança, encapsulamento, tratamento de exceções e relacionamento entre classes num sistema inspirado em plataformas reais.
 
-### 🔧 Sistema de Biblioteca em Python
+## 🎓 Aplicação acadêmica
 
-Projeto desenvolvido aplicando:
+Base para desenvolvimento de software moderno, engenharia de software, APIs, sistemas web e arquitetura de aplicações.
 
-* classes e objetos
-* herança
-* encapsulamento
-* tratamento de exceções
-* relacionamento entre classes
+## 🚀 Tecnologias
 
----
-
-## 🚀 Tecnologias Utilizadas
-
-* Python
-* VS Code
-
----
-
-## 🎓 Aplicação Acadêmica
-
-Esta disciplina é a base para desenvolvimento de software moderno, engenharia de software, APIs, sistemas web e arquitetura de aplicações.
-
----
+Python · VS Code
 
 ## 👨‍💻 Autor
 
-**JonnyMarcus**
+**Jonny Marcus**

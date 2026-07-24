@@ -1,153 +1,76 @@
 # 🧮 Calculadora Binária em Assembly x86
 
-## 📚 Sobre o Projeto
+Projeto final em **Assembly x86**, aplicando os conceitos de **Arquitetura de Computadores II** diretamente no funcionamento do processador, registradores e execução de instruções em baixo nível.
 
-Projeto final desenvolvido em **Assembly x86** para aplicar os principais conceitos estudados em **Arquitetura de Computadores II**, explorando diretamente o funcionamento do processador, registradores e execução de instruções em baixo nível.
+<p align="left">
+  <img src="https://img.shields.io/badge/Assembly%20x86-lightgrey" alt="Assembly x86">
+  <img src="https://img.shields.io/badge/NASM-lightgrey" alt="NASM">
+</p>
 
-O sistema realiza operações aritméticas básicas e exibe resultados em decimal e binário.
+## 📖 Sobre
 
----
+O sistema realiza operações aritméticas básicas e exibe os resultados tanto em decimal quanto em binário.
 
 ## 🎯 Objetivo
 
 Aplicar conceitos de arquitetura de computadores através da implementação direta de operações em linguagem de montagem.
 
----
-
 ## ⚙️ Funcionalidades
 
-### 📌 Entrada de dois números inteiros
+- Entrada de dois números inteiros
+- Operações: soma, subtração, multiplicação
+- Comparações: maior valor, menor valor
+- Conversão do resultado para decimal e binário
 
-### 📌 Operações:
+## 🧠 Conceitos aplicados
 
-* soma
-* subtração
-* multiplicação
+| Categoria              | Itens                                                       |
+| ---------------------- | ----------------------------------------------------------- |
+| Registradores          | AX, BX, CX, DX                                              |
+| Instruções aritméticas | ADD, SUB, MUL                                               |
+| Fluxo de controle      | JMP, CMP, JE, JG, JL                                        |
+| Subrotinas             | Separação de rotinas de cálculo, reutilização de código     |
+| Organização de memória | Armazenamento em registradores, manipulação direta de dados |
 
-### 📌 Comparações:
+## 💡 Exemplo de funcionamento
 
-* maior valor
-* menor valor
-
-### 📌 Conversão de resultado:
-
-* decimal
-* binário
-
----
-
-## 🧠 Conceitos Aplicados
-
-### ✅ Registradores
-
-* AX
-* BX
-* CX
-* DX
-
-### ✅ Instruções Aritméticas
-
-* ADD
-* SUB
-* MUL
-
-### ✅ Fluxo de Controle
-
-* JMP
-* CMP
-* JE
-* JG
-* JL
-
-### ✅ Subrotinas
-
-* separação de rotinas de cálculo
-* reutilização de código
-
-### ✅ Organização de Memória
-
-* armazenamento em registradores
-* manipulação direta de dados
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash id="asm01"
-calculadora_binaria_assembly/
-│
-├── README.md
-└── calculadora.asm
-```
-
----
-
-## 💡 Exemplo de Funcionamento
-
+```text
 Entrada:
-
-```text id="asm02"
 Número 1: 5
 Número 2: 3
-```
 
 Saída:
-
-```text id="asm03"
 Soma: 8
 Binário: 1000
 ```
 
----
+## 📂 Estrutura do projeto
 
-## 🚀 Tecnologias Utilizadas
-
-* Assembly x86
-* NASM
-* GCC / LD
-* Visual Studio Code
-
----
-
-## ▶️ Como Executar
-
-Compilar:
-
-```bash id="asm04"
-nasm -f elf64 calculadora.asm
-ld calculadora.o -o calculadora
+```text
+calculadora_binaria_assembly/
+├── README.md
+└── calculadora.asm
 ```
 
-Executar:
+## ▶️ Como executar
 
-```bash id="asm05"
+```bash
+nasm -f elf64 calculadora.asm
+ld calculadora.o -o calculadora
 ./calculadora
 ```
 
----
+## 🛠️ Tecnologias
 
-## 🎓 Relação com a Disciplina
+Assembly x86 · NASM · GCC/LD · Visual Studio Code
 
-Este projeto integra diretamente:
+## 🗺️ Possíveis evoluções futuras
 
-* ISA
-* instruções assembly
-* registradores
-* aritmética computacional
-* fluxo de controle
-
----
-
-## 📈 Possíveis Evoluções Futuras
-
-* divisão
-* menu interativo
-* entrada por teclado completa
-* suporte a múltiplas operações
-
----
+- [ ] Divisão
+- [ ] Menu interativo
+- [ ] Entrada por teclado completa
+- [ ] Suporte a múltiplas operações
 
 ## 👨‍💻 Autor
 
-**JonnyMarcus**
-
+**Jonny Marcus**

@@ -1,28 +1,45 @@
 # 📘 Cálculo A
 
-## 📚 Sobre a Disciplina
+Repositório de estudos da disciplina **Cálculo A** — base matemática para análise de funções, limites, derivadas e integrais.
 
-Disciplina cursada no **1º período de Ciência da Computação**, responsável por construir a base matemática para análise de funções, limites, derivadas e integrais, conteúdos essenciais para diversas áreas da computação.
+<p align="left">
+  <img src="https://img.shields.io/badge/C%C3%A1lculo%20Diferencial-lightgrey" alt="Cálculo Diferencial">
+  <img src="https://img.shields.io/badge/Limites%20%26%20Derivadas-lightgrey" alt="Limites e Derivadas">
+</p>
 
----
+## 📖 Sobre a disciplina
 
-## 🎯 Objetivos da Disciplina
+Disciplina do 1º período de Ciência da Computação, responsável por construir a base matemática essencial para diversas áreas da computação, cobrindo limites, técnicas de derivação, funções especiais e aplicações práticas de derivadas.
 
-Ao final da disciplina, o estudo permitiu desenvolver:
+## 🎯 Objetivos
 
-* compreensão de limites
-* interpretação de derivadas
-* análise gráfica de funções
-* aplicações de derivação
-* noções de integração
+- Compreender limites e interpretar derivadas
+- Analisar graficamente o comportamento de funções
+- Aplicar derivação em problemas de otimização e taxas de variação
+- Desenvolver noções introdutórias de integração
 
----
+## 📚 Conteúdo trabalhado
 
-## 📂 Estrutura do Repositório
+| Lista | Tema                        | Tópicos                                                                           |
+| ----- | --------------------------- | --------------------------------------------------------------------------------- |
+| 1     | **Limites**                 | Propriedades algébricas · limites laterais · continuidade · limites infinitos     |
+| 2     | **Técnicas de Derivação**   | Derivadas básicas · regra do produto · regra do quociente · regra da cadeia       |
+| 3     | **Funções Especiais**       | Funções hiperbólicas · trigonométricas inversas                                   |
+| 4     | **Estudo de Gráficos**      | Crescimento e decrescimento · máximos e mínimos · concavidade · ponto de inflexão |
+| 5     | **Aplicações de Derivação** | Reta tangente · otimização · taxas de variação                                    |
 
-```bash id="h2x8mk"
+## 📈 Evolução na disciplina
+
+Compreensão do comportamento local de funções → aplicações completas de derivadas.
+
+## 💻 Relação com Ciência da Computação
+
+Algoritmos numéricos · inteligência artificial · computação gráfica · modelagem matemática
+
+## 📂 Estrutura do repositório
+
+```text
 Calculo_A/
-│
 ├── README.md
 │
 ├── listas/
@@ -33,105 +50,17 @@ Calculo_A/
 │   └── MAT00A_Lista_5_AplicacoesDerivacao.pdf
 │
 └── projeto_integrador/
+    └── analisador_funcoes/
 ```
 
----
+## 💻 Projeto integrador
 
-## 📖 Conteúdos Trabalhados
+**Analisador de Funções em C** — entrada de função quadrática, cálculo de derivada, raízes, vértice e análise de crescimento/decrescimento.
 
-### 📌 Lista 1 — Limites
+## 📖 Referência
 
-* propriedades algébricas
-* limites laterais
-* continuidade
-* limites infinitos
-
-### 📌 Lista 2 — Técnicas de Derivação
-
-* derivadas básicas
-* regra do produto
-* regra do quociente
-* regra da cadeia
-
-### 📌 Lista 3 — Funções Especiais
-
-* funções hiperbólicas
-* trigonométricas inversas
-
-### 📌 Lista 4 — Estudo de Gráficos
-
-* crescimento e decrescimento
-* máximos e mínimos
-* concavidade
-* ponto de inflexão
-
-### 📌 Lista 5 — Aplicações de Derivação
-
-* reta tangente
-* otimização
-* taxas de variação
-
----
-
-## 📈 Evolução na Disciplina
-
-A disciplina avança da compreensão do comportamento local de funções até aplicações completas de derivadas.
-
----
-
-## 🧠 Conceitos Fortemente Desenvolvidos
-
-* raciocínio matemático
-* interpretação gráfica
-* análise algébrica
-* resolução estruturada de problemas
-
----
-
-## 💻 Relação com Ciência da Computação
-
-Cálculo A fornece base para:
-
-* algoritmos numéricos
-* inteligência artificial
-* computação gráfica
-* modelagem matemática
-
----
-
-## 🚀 Projeto Integrador Sugerido
-
-### 📌 Analisador de Funções em C
-
-Projeto simples para aplicar os conceitos estudados.
-
-### Funcionalidades:
-
-* entrada de função quadrática
-* cálculo da derivada
-* raízes
-* vértice
-* crescimento e decrescimento
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash id="w5m1rd"
-projeto_integrador/
-└── analisador_funcoes/
-    ├── README.md
-    └── main.c
-```
-
----
-
-## 📌 Referência Principal
-
-James Stewart — Cálculo Vol. 1 e Vol. 2
-
----
+James Stewart — _Cálculo_, Vol. 1 e Vol. 2
 
 ## 👨‍💻 Autor
 
-**JonnyMarcus**
+**Jonny Marcus**
