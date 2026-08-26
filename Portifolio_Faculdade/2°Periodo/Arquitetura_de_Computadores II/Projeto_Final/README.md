@@ -46,11 +46,11 @@ Binário: 1000
 
 ## 📂 Estrutura do projeto
 
-```text
+````text
 calculadora_binaria_assembly/
 ├── README.md
 └── calculadora.asm
-```
+
 
 ## ▶️ Como executar
 
@@ -58,7 +58,7 @@ calculadora_binaria_assembly/
 nasm -f elf64 calculadora.asm
 ld calculadora.o -o calculadora
 ./calculadora
-```
+````
 
 ## 🛠️ Tecnologias
 

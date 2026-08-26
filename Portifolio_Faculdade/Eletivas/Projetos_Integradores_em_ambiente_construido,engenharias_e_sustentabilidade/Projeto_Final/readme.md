@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # 🌱 EcoItamambuca — Projeto Integrador
 
 Sistema integrado para **monitoramento territorial, participação comunitária e apoio à sustentabilidade** no território de Itamambuca, Ubatuba/SP.
@@ -9,9 +11,30 @@ Sistema integrado para **monitoramento territorial, participação comunitária 
   <img src="https://img.shields.io/badge/Geotecnologia-QGIS-589632" alt="QGIS">
   <img src="https://img.shields.io/badge/Sustentabilidade-SbN-2E7D32" alt="Soluções Baseadas na Natureza">
   <img src="https://img.shields.io/badge/UNIFEI-Instituto%20de%20Recursos%20Naturais-0B3D91" alt="UNIFEI">
+=======
+# 🌱 EcoItamambuca
+
+**Sistema de monitoramento socioambiental e apoio ao planejamento territorial de Itamambuca — Ubatuba/SP.**
+
+<p align="left">
+
+<img src="https://img.shields.io/badge/Java-Spring%20Boot-6DB33F?logo=springboot&logoColor=white" alt="Java Spring Boot">
+
+<img src="https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white" alt="Next.js">
+
+<img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL">
+
+<img src="https://img.shields.io/badge/QGIS-589632?logo=qgis&logoColor=white" alt="QGIS">
+
+<img src="https://img.shields.io/badge/UNIFEI-IRN-0B3D91" alt="UNIFEI IRN">
+
+> > > > > > > develop
+
 </p>
 
 ---
+
+<<<<<<< HEAD
 
 ## 📖 Sobre o projeto
 
@@ -246,7 +269,7 @@ EcoItamambuca/
 └── assets/
     ├── imagens/
     └── diagramas/
-```
+
 
 ---
 
@@ -333,3 +356,5 @@ O **EcoItamambuca** demonstra como a tecnologia pode ser utilizada como ferramen
 A integração entre **dados geográficos, tecnologia, participação social e Soluções Baseadas na Natureza** permite construir uma abordagem interdisciplinar para compreender os desafios ambientais e buscar alternativas mais sustentáveis para o território.
 
 > **Tecnologia para compreender o território. Dados para orientar decisões. Sustentabilidade para transformar o futuro. 🌱**
+
+```

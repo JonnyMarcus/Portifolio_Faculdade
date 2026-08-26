@@ -89,6 +89,8 @@ Esse arquivo é lido automaticamente (`CarregaAlunos`) a cada início do program
 | Operadores                       | Repetição (`for`/`do-while`)        | Ponteiros                                                         |
 | Entrada/saída (`scanf`, `fgets`) | Funções e parâmetros                | Arquivos (`fopen`/`fprintf`/`fscanf`) · ordenação (_bubble sort_) |
 
+<<<<<<< HEAD
+
 ## 🗺️ Evoluções futuras
 
 - [ ] Modularizar em múltiplos arquivos `.c`/`.h` (separar CRUD, persistência e menu)
