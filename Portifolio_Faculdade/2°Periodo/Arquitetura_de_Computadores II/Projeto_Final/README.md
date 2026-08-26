@@ -20,19 +20,19 @@ Aplicar conceitos de arquitetura de computadores através da implementação dir
 
 ### 📌 Operações:
 
-* soma
-* subtração
-* multiplicação
+- soma
+- subtração
+- multiplicação
 
 ### 📌 Comparações:
 
-* maior valor
-* menor valor
+- maior valor
+- menor valor
 
 ### 📌 Conversão de resultado:
 
-* decimal
-* binário
+- decimal
+- binário
 
 ---
 
@@ -40,34 +40,34 @@ Aplicar conceitos de arquitetura de computadores através da implementação dir
 
 ### ✅ Registradores
 
-* AX
-* BX
-* CX
-* DX
+- AX
+- BX
+- CX
+- DX
 
 ### ✅ Instruções Aritméticas
 
-* ADD
-* SUB
-* MUL
+- ADD
+- SUB
+- MUL
 
 ### ✅ Fluxo de Controle
 
-* JMP
-* CMP
-* JE
-* JG
-* JL
+- JMP
+- CMP
+- JE
+- JG
+- JL
 
 ### ✅ Subrotinas
 
-* separação de rotinas de cálculo
-* reutilização de código
+- separação de rotinas de cálculo
+- reutilização de código
 
 ### ✅ Organização de Memória
 
-* armazenamento em registradores
-* manipulação direta de dados
+- armazenamento em registradores
+- manipulação direta de dados
 
 ---
 
@@ -102,10 +102,10 @@ Binário: 1000
 
 ## 🚀 Tecnologias Utilizadas
 
-* Assembly x86
-* NASM
-* GCC / LD
-* Visual Studio Code
+- Assembly x86
+- NASM
+- GCC / LD
+- Visual Studio Code
 
 ---
 
@@ -130,24 +130,14 @@ Executar:
 
 Este projeto integra diretamente:
 
-* ISA
-* instruções assembly
-* registradores
-* aritmética computacional
-* fluxo de controle
-
----
-
-## 📈 Possíveis Evoluções Futuras
-
-* divisão
-* menu interativo
-* entrada por teclado completa
-* suporte a múltiplas operações
+- ISA
+- instruções assembly
+- registradores
+- aritmética computacional
+- fluxo de controle
 
 ---
 
 ## 👨‍💻 Autor
 
 **JonnyMarcus**
-

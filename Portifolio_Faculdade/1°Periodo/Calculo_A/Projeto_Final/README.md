@@ -18,41 +18,41 @@ Aplicar conceitos de cálculo diferencial e integral através da programação, 
 
 ### 🔹 Entrada de Função
 
-* função quadrática
-* função polinomial simples
+- função quadrática
+- função polinomial simples
 
 ### 🔹 Cálculo de Limites
 
-* aproximação numérica lateral
-* comportamento em pontos específicos
+- aproximação numérica lateral
+- comportamento em pontos específicos
 
 ### 🔹 Derivadas
 
-* cálculo da derivada da função
+- cálculo da derivada da função
 
 f'(x)=\frac{d}{dx}f(x)
 
-* análise de crescimento
-* análise de decrescimento
+- análise de crescimento
+- análise de decrescimento
 
 ### 🔹 Integrais
 
-* cálculo aproximado por soma de retângulos
+- cálculo aproximado por soma de retângulos
 
 \int_a^b f(x),dx
 
-* área sob a curva
+- área sob a curva
 
 ### 🔹 Estudo da Função
 
-* raízes
-* vértice
-* máximo e mínimo
+- raízes
+- vértice
+- máximo e mínimo
 
 ### 🔹 Plotagem Gráfica
 
-* geração automática de pontos
-* criação de gráfico com gnuplot
+- geração automática de pontos
+- criação de gráfico com gnuplot
 
 ---
 
@@ -83,18 +83,18 @@ Responsável pelo menu principal e interação com o usuário.
 
 Contém:
 
-* cálculo da função
-* derivada
-* limites
-* integral
+- cálculo da função
+- derivada
+- limites
+- integral
 
 ### grafico.c / grafico.h
 
 Responsável por:
 
-* gerar pontos
-* salvar em arquivo
-* chamar gnuplot
+- gerar pontos
+- salvar em arquivo
+- chamar gnuplot
 
 ### dados.txt
 
@@ -110,7 +110,7 @@ Armazena gráficos gerados.
 
 ### Limite
 
-\lim_{x\to a} f(x)
+\lim\_{x\to a} f(x)
 
 ### Derivada de função quadrática
 
@@ -176,9 +176,9 @@ gcc main.c funcoes.c grafico.c -o analisador
 
 ## 🛠️ Dependências
 
-* GCC
-* gnuplot
-* Visual Studio Code
+- GCC
+- gnuplot
+- Visual Studio Code
 
 ---
 
@@ -186,20 +186,11 @@ gcc main.c funcoes.c grafico.c -o analisador
 
 Este projeto integra:
 
-* funções
-* limites
-* derivadas
-* integrais
-* interpretação gráfica
-
----
-
-## 📈 Possíveis Evoluções Futuras
-
-* derivada numérica automática
-* integrais definidas mais precisas
-* múltiplos tipos de função
-* comparação entre função e derivada
+- funções
+- limites
+- derivadas
+- integrais
+- interpretação gráfica
 
 ---
 

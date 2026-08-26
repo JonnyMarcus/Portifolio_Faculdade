@@ -169,20 +169,6 @@ simulador.exe
 
 ---
 
-## 🚀 Possíveis Melhorias
-
-- Complemento de dois;
-- Conversão IEEE 754;
-- Tabela ASCII completa;
-- Operações lógicas binárias (AND, OR, XOR, NOT);
-- Simulação de cache;
-- Simulação de registradores;
-- Visualização de memória por endereços;
-- Interface gráfica;
-- Geração de relatórios em arquivo.
-
----
-
 ## 🎓 Importância Acadêmica
 
 Este projeto foi desenvolvido para consolidar os conceitos fundamentais de Arquitetura de Computadores, proporcionando uma visão prática da representação e manipulação de dados em sistemas computacionais.

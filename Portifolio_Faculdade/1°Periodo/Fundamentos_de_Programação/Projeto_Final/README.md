@@ -185,16 +185,6 @@ Esse arquivo é lido automaticamente (`CarregaAlunos`) sempre que o programa ini
 
 ---
 
-## 💡 Evoluções futuras
-
-- [ ] Modularizar em múltiplos arquivos `.c`/`.h` (separar CRUD, persistência e menu)
-- [ ] Ordenar também por média
-- [ ] Gerar relatório resumido em arquivo separado
-- [ ] Trocar vetor de tamanho fixo por alocação dinâmica (`malloc`/`realloc`)
-- [ ] Validar entradas (matrícula duplicada, notas fora do intervalo 0–10)
-
----
-
 ## 👤 Autor
 
 Feito por **Jonny Marcus**
