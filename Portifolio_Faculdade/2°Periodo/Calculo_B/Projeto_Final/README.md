@@ -1,70 +1,37 @@
 # 🔧 Visualizador de Curvas e Superfícies Matemáticas
 
-## 📚 Sobre o Projeto
+Projeto que integra visualização matemática, cálculo multivariável e representação gráfica computacional, aplicando os principais conceitos de **Cálculo B**.
 
-Projeto desenvolvido para aplicar os principais conceitos estudados em **Cálculo B**, integrando visualização matemática, cálculo multivariável e representação gráfica computacional.
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white" alt="C">
+  <img src="https://img.shields.io/badge/NumPy%20%26%20SymPy-013243" alt="NumPy e SymPy">
+</p>
 
-O sistema permite representar curvas e superfícies matemáticas, facilitando a interpretação visual dos conteúdos estudados na disciplina.
+## 📖 Sobre
 
----
+O sistema representa curvas e superfícies matemáticas graficamente, facilitando a interpretação visual dos conteúdos estudados na disciplina.
 
 ## 🎯 Objetivo
 
-Implementar uma ferramenta capaz de calcular e visualizar:
+Calcular e visualizar curvas paramétricas, curvas polares, superfícies tridimensionais, derivadas parciais, vetor gradiente, plano tangente e curvas de nível.
 
-* curvas paramétricas
-* curvas polares
-* superfícies tridimensionais
-* derivadas parciais
-* vetor gradiente
-* plano tangente
-* curvas de nível
+## ⚙️ Funcionalidades
 
----
+| Módulo              | O que faz                                                   |
+| ------------------- | ----------------------------------------------------------- |
+| Curvas paramétricas | Geração de curvas 2D e 3D, cálculo de pontos por parâmetro  |
+| Coordenadas polares | Conversão polar → cartesiana, geração de curvas polares     |
+| Superfícies 3D      | Plotagem de superfícies matemáticas e visualização espacial |
+| Derivadas parciais  | Cálculo simbólico em relação a múltiplas variáveis          |
+| Gradiente           | Cálculo do vetor gradiente e direção de crescimento máximo  |
+| Plano tangente      | Aproximação local de superfícies                            |
+| Curvas de nível     | Visualização de cortes horizontais de funções               |
 
-## 💻 Funcionalidades
+## 📂 Estrutura do projeto
 
-### 🔹 Curvas Paramétricas
-
-* geração de curvas 2D
-* geração de curvas 3D
-* cálculo de pontos por parâmetro
-
-### 🔹 Coordenadas Polares
-
-* conversão polar para cartesiana
-* geração de curvas polares
-
-### 🔹 Superfícies 3D
-
-* plotagem de superfícies matemáticas
-* visualização espacial
-
-### 🔹 Derivadas Parciais
-
-* cálculo simbólico
-* derivadas em relação a múltiplas variáveis
-
-### 🔹 Gradiente
-
-* cálculo do vetor gradiente
-* direção de crescimento máximo
-
-### 🔹 Plano Tangente
-
-* aproximação local de superfícies
-
-### 🔹 Curvas de Nível
-
-* visualização de cortes horizontais de funções
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash id="projcb901"
+```text
 Visualizador_Calculo_B/
-│
 ├── README.md
 │
 ├── src_python/
@@ -83,38 +50,14 @@ Visualizador_Calculo_B/
 └── graficos/
 ```
 
----
+## 🛠️ Tecnologias
 
-## ⚙️ Tecnologias Utilizadas
+Python (NumPy, SymPy, Matplotlib) · C · GCC
 
-* Python
-* NumPy
-* SymPy
-* Matplotlib
-* C
-* GCC
+## 🎓 Conceitos aplicados
 
----
-
-## 🚀 Aplicação Acadêmica
-
-Este projeto conecta diretamente matemática com computação, permitindo transformar conceitos abstratos em visualizações concretas.
-
----
-
-## 🎓 Conhecimentos Aplicados
-
-✅ Equações paramétricas
-✅ Coordenadas polares
-✅ Geometria analítica espacial
-✅ Funções vetoriais
-✅ Derivadas parciais
-✅ Gradiente
-✅ Otimização multivariável
-
----
+Equações paramétricas · coordenadas polares · geometria analítica espacial · funções vetoriais · derivadas parciais · gradiente · otimização multivariável
 
 ## 👨‍💻 Autor
 
-**JonnyMarcus**
-
+**Jonny Marcus**

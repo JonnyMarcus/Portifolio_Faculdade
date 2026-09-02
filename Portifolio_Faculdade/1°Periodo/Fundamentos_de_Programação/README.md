@@ -1,249 +1,62 @@
 # 💻 Fundamentos de Programação
 
-## 📚 Sobre a Disciplina
+Repositório de estudos da disciplina **Fundamentos de Programação** — o primeiro contato estruturado com resolução de problemas computacionais, algoritmos e implementação em linguagem **C**.
 
-Disciplina cursada no **1º período de Computer Science Ciência da Computação**, responsável pela construção da base lógica e computacional necessária para o desenvolvimento em programação.
+<p align="left">
+  <img src="https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white" alt="C">
+  <img src="https://img.shields.io/badge/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o-lightgrey" alt="Lógica de Programação">
+</p>
 
-Fundamentos de Programação representa o primeiro contato estruturado com resolução de problemas computacionais, algoritmos e implementação em linguagem **C**, desenvolvendo a capacidade de transformar raciocínio lógico em soluções executáveis.
+## 📖 Sobre a disciplina
 
-A disciplina evolui desde conceitos elementares até manipulação de memória, funções, vetores, estruturas e arquivos.
+Disciplina do 1º período de Ciência da Computação, responsável pela construção da base lógica e computacional necessária para o desenvolvimento em programação. Evolui desde conceitos elementares (variáveis, estruturas de controle) até manipulação de memória, funções, vetores, estruturas (`struct`) e arquivos.
 
----
+## 🎯 Objetivos
 
-## 🎯 Objetivos da Disciplina
+- Desenvolver raciocínio lógico computacional
+- Aprender a estruturar algoritmos
+- Compreender a sintaxe e o funcionamento da linguagem C
+- Resolver problemas progressivamente mais complexos
+- Construir base sólida para disciplinas futuras
 
-* desenvolver raciocínio lógico computacional
-* aprender a estruturar algoritmos
-* compreender sintaxe e funcionamento da linguagem C
-* resolver problemas progressivamente mais complexos
-* construir base sólida para disciplinas futuras
+## 📚 Conteúdo trabalhado
 
----
+| Bloco                                | Tópicos                                                                                | Listas                   |
+| ------------------------------------ | -------------------------------------------------------------------------------------- | ------------------------ |
+| **Introdução à lógica e algoritmos** | Lógica computacional · entrada e saída · variáveis · operadores · estrutura sequencial | Listas 1, 2 e 3          |
+| **Estruturas condicionais**          | `if` / `else` · if encadeado · operadores relacionais e lógicos                        | Listas 4, 4.1 e 4.2      |
+| **Estruturas de repetição**          | `while` · `do-while` · `for` · contadores e acumuladores                               | Listas 5 e 5.1           |
+| **Funções**                          | Modularização · passagem por valor · retorno de função · reutilização de código        | Listas 6, 6.1, 7 e 7.1   |
+| **Ponteiros e memória**              | Endereçamento · ponteiros · pilha de execução · passagem por referência                | Lista 7 — Ponteiros      |
+| **Vetores e matrizes**               | Arrays unidimensionais e bidimensionais · strings · manipulação de índices             | Listas 8, 8.1, 8.2 e 8.3 |
+| **Estruturas (`struct`)**            | Agrupamento de dados · modelagem de informações                                        | Lista 9                  |
+| **Arquivos**                         | `fopen`, `fclose`, `fprintf`, `fscanf` · persistência de dados                         | Lista 10                 |
 
-## 📂 Estrutura do Repositório
+## 📈 Evolução da disciplina
 
-```bash id="fund01"
+Lógica pura e estrutura sequencial → decisões, repetições e funções → ponteiros, memória, estruturas e arquivos.
+
+## 📂 Estrutura do repositório
+
+```text
 Fundamentos_Programacao/
-│
 ├── README.md
 │
 ├── aulas/
-│
 ├── listas_exercicios/
-│
 ├── implementacoes_praticas/
-│
 ├── resumos/
-│
 └── materiais_pdf/
 ```
 
----
+## 💻 Projeto integrador
 
-## 📖 Estrutura dos Conteúdos
+**Sistema de Cadastro de Alunos em C** — CRUD completo (cadastrar, listar, buscar, editar, remover), cálculo de média da turma e persistência em arquivo, aplicando `struct`, funções, vetores e arquivos.
 
-### 🔹 Introdução à Lógica e Algoritmos
+## 🎓 Relação com disciplinas futuras
 
-* lógica computacional
-* entrada e saída de dados
-* variáveis
-* operadores
-* estrutura sequencial
-
-Arquivos:
-
-* Lista 1 — Lógica
-* Lista 2 — Itens Fundamentais
-* Lista 3 — Estrutura Sequencial
-
----
-
-### 🔹 Estruturas Condicionais
-
-* if
-* else
-* if encadeado
-* operadores relacionais
-* operadores lógicos
-
-Arquivos:
-
-* Lista 4
-* Lista 4.1
-* Lista 4.2
-
----
-
-### 🔹 Estruturas de Repetição
-
-* while
-* do while
-* for
-* contadores
-* acumuladores
-
-Arquivos:
-
-* Lista 5
-* Lista 5.1
-
----
-
-### 🔹 Funções
-
-* modularização
-* passagem por valor
-* retorno de função
-* reutilização de código
-
-Arquivos:
-
-* Lista 6
-* Lista 6.1
-* Lista 7
-* Lista 7.1
-
----
-
-### 🔹 Ponteiros e Memória
-
-* endereçamento
-* ponteiros
-* memória
-* pilha de execução
-* passagem por referência
-
-Arquivos:
-
-* Lista 7 — Ponteiros
-* Ponteiros
-* Pilha de Execução de Funções
-
----
-
-### 🔹 Vetores e Matrizes
-
-* arrays unidimensionais
-* arrays bidimensionais
-* strings
-* manipulação de índices
-
-Arquivos:
-
-* Lista 8 — Vetor
-* Lista 8.1 — Matriz
-* Lista 8.2 — Vetor com Função
-* Lista 8.3 — Cadeia de Caracteres
-
----
-
-### 🔹 Estruturas (struct)
-
-* struct
-* agrupamento de dados
-* modelagem de informações
-
-Arquivos:
-
-* Lista 9
-* Notas de Aula — Estruturas
-
----
-
-### 🔹 Arquivos
-
-* fopen
-* fclose
-* fprintf
-* fscanf
-* persistência de dados
-
-Arquivos:
-
-* Lista 10
-* Notas de Aula — Arquivos
-
----
-
-## 📈 Evolução da Disciplina
-
-### Início
-
-* lógica pura
-* estrutura sequencial
-
-### Intermediário
-
-* decisões
-* repetições
-* funções
-
-### Avançado
-
-* ponteiros
-* memória
-* estruturas
-* arquivos
-
----
-
-## 🧠 Conceitos Fundamentais Aprendidos
-
-✅ algoritmos
-✅ estruturas de controle
-✅ modularização
-✅ memória e ponteiros
-✅ vetores e matrizes
-✅ structs
-✅ arquivos em C
-
----
-
-## 🚀 Relação com Disciplinas Futuras
-
-Fundamentos de Programação é base direta para:
-
-* Estruturas de Dados
-* Programação Orientada a Objetos
-* Algoritmos
-* Sistemas Operacionais
-
----
-
-## 💡 Projeto Integrador da Disciplina
-
-### 📋 Sistema de Cadastro de Alunos em C
-
-Projeto proposto para consolidar os principais conhecimentos da disciplina.
-
-Funcionalidades:
-
-* cadastrar alunos
-* listar alunos
-* buscar por matrícula
-* editar dados
-* remover registros
-* calcular média da turma
-* salvar em arquivo
-
-Conceitos aplicados:
-
-* struct
-* funções
-* vetores
-* arquivos
-* organização lógica
-
----
-
-## 🎓 Importância na Formação
-
-Esta disciplina representa a base da construção do pensamento computacional e da capacidade de resolver problemas através da programação.
-
-Grande parte da maturidade em desenvolvimento adquirida nas disciplinas futuras depende diretamente do domínio construído aqui.
-
----
+Estruturas de Dados · Programação Orientada a Objetos · Algoritmos · Sistemas Operacionais
 
 ## 👨‍💻 Autor
 
-**JonnyMarcus**
+**Jonny Marcus**

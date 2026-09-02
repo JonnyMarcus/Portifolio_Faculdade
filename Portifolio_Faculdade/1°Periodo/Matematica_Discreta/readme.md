@@ -1,278 +1,61 @@
 # 🧮 Matemática Discreta
 
-## 📚 Sobre a Disciplina
+Repositório de estudos da disciplina **Matemática Discreta** — base matemática para algoritmos, estruturas de dados, bancos de dados, inteligência artificial, teoria da computação e criptografia.
 
-Disciplina cursada no **1º período de Ciência da Computação**, responsável por fornecer a base matemática necessária para diversas áreas da Computação, como algoritmos, estruturas de dados, bancos de dados, inteligência artificial, teoria da computação e criptografia.
+<p align="left">
+  <img src="https://img.shields.io/badge/L%C3%B3gica%20Proposicional-lightgrey" alt="Lógica Proposicional">
+  <img src="https://img.shields.io/badge/Teoria%20dos%20Grafos-lightgrey" alt="Teoria dos Grafos">
+  <img src="https://img.shields.io/badge/Combinat%C3%B3ria-lightgrey" alt="Combinatória">
+</p>
 
-Matemática Discreta desenvolve o raciocínio lógico e formal, permitindo modelar problemas computacionais através de conjuntos, relações, lógica proposicional, combinatória e grafos.
+## 📖 Sobre a disciplina
 
-A disciplina constitui um dos pilares fundamentais da formação em Ciência da Computação.
+Disciplina do 1º período de Ciência da Computação que desenvolve o raciocínio lógico e formal, permitindo modelar problemas computacionais através de conjuntos, relações, lógica proposicional, combinatória e grafos — um dos pilares fundamentais da formação em Ciência da Computação.
 
----
+## 🎯 Objetivos
 
-## 🎯 Objetivos da Disciplina
+- Desenvolver raciocínio lógico e matemático
+- Compreender estruturas discretas utilizadas na computação
+- Aprender a modelar problemas computacionais
+- Aplicar lógica e teoria dos conjuntos
+- Entender os fundamentos matemáticos dos algoritmos
 
-- desenvolver raciocínio lógico e matemático;
-- compreender estruturas discretas utilizadas na Computação;
-- aprender a modelar problemas computacionais;
-- aplicar lógica e teoria dos conjuntos;
-- entender os fundamentos matemáticos dos algoritmos.
+## 📚 Conteúdo trabalhado
 
----
+| Bloco                    | Tópicos                                                                                               | Listas  |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- | ------- |
+| **Lógica Proposicional** | Proposições · conectivos lógicos · tabelas-verdade · equivalência lógica · tautologias · contradições | Lista 1 |
+| **Teoria dos Conjuntos** | União · interseção · diferença · complemento · subconjuntos · produto cartesiano                      | Lista 2 |
+| **Relações e Funções**   | Propriedades das relações · relações de equivalência · funções injetoras, sobrejetoras e bijetoras    | Lista 3 |
+| **Indução Matemática**   | Princípio da indução · provas por indução · recorrência                                               | Lista 4 |
+| **Análise Combinatória** | Princípio multiplicativo · arranjos · permutações · combinações · coeficiente binomial                | Lista 5 |
+| **Álgebra Booleana**     | Operadores lógicos · simplificação de expressões · leis de De Morgan · tabelas lógicas                | Lista 6 |
+| **Teoria dos Grafos**    | Vértices e arestas · matriz de adjacência · caminhos · grafos conexos · DFS · BFS                     | Lista 7 |
 
-## 📂 Estrutura do Repositório
+## 📈 Evolução da disciplina
+
+Lógica proposicional e teoria dos conjuntos → relações, funções, indução e combinatória → álgebra booleana, teoria dos grafos e modelagem matemática.
+
+## 📂 Estrutura do repositório
 
 ```text
 Matematica_Discreta/
-│
 ├── README.md
 │
 ├── aulas/
-│
 ├── listas_exercicios/
-│
 ├── implementacoes_praticas/
-│
 ├── resumos/
-│
 └── materiais_pdf/
 ```
 
----
+## 💻 Projeto integrador
 
-## 📖 Estrutura dos Conteúdos
+**Discrete Math Toolkit — C Edition** — ferramenta que reúne operações com conjuntos, relações, lógica proposicional e grafos (incluindo DFS/BFS) num só sistema modular em C.
 
-### 🔹 Lógica Proposicional
+## 🚀 Relação com disciplinas futuras
 
-- proposições
-- conectivos lógicos
-- tabelas-verdade
-- equivalência lógica
-- tautologias
-- contradições
-
-Arquivos:
-
-- Lista 1
-- Exercícios de Lógica
-- Resumos
-
----
-
-### 🔹 Teoria dos Conjuntos
-
-- conjuntos
-- união
-- interseção
-- diferença
-- complemento
-- subconjuntos
-- produto cartesiano
-
-Arquivos:
-
-- Lista 2
-- Exercícios sobre Conjuntos
-
----
-
-### 🔹 Relações e Funções
-
-- relações
-- propriedades das relações
-- relações de equivalência
-- funções
-- funções injetoras
-- funções sobrejetoras
-- funções bijetoras
-
-Arquivos:
-
-- Lista 3
-- Exercícios de Relações
-
----
-
-### 🔹 Indução Matemática
-
-- princípio da indução
-- provas por indução
-- recorrência
-
-Arquivos:
-
-- Lista 4
-- Exercícios de Indução
-
----
-
-### 🔹 Análise Combinatória
-
-- princípio multiplicativo
-- arranjos
-- permutações
-- combinações
-- coeficiente binomial
-
-Arquivos:
-
-- Lista 5
-- Exercícios de Combinatória
-
----
-
-### 🔹 Álgebra Booleana
-
-- operadores lógicos
-- simplificação de expressões
-- leis de De Morgan
-- tabelas lógicas
-
-Arquivos:
-
-- Lista 6
-- Exercícios de Álgebra Booleana
-
----
-
-### 🔹 Teoria dos Grafos
-
-- vértices
-- arestas
-- matriz de adjacência
-- caminhos
-- grafos conexos
-- busca em profundidade (DFS)
-- busca em largura (BFS)
-
-Arquivos:
-
-- Lista 7
-- Exercícios de Grafos
-
----
-
-## 📈 Evolução da Disciplina
-
-### Início
-
-- lógica proposicional
-- teoria dos conjuntos
-
-### Intermediário
-
-- relações
-- funções
-- indução matemática
-- combinatória
-
-### Avançado
-
-- álgebra booleana
-- teoria dos grafos
-- modelagem matemática
-
----
-
-## 🧠 Conceitos Fundamentais Aprendidos
-
-✅ lógica proposicional
-
-✅ teoria dos conjuntos
-
-✅ relações e funções
-
-✅ indução matemática
-
-✅ análise combinatória
-
-✅ álgebra booleana
-
-✅ teoria dos grafos
-
----
-
-## 🚀 Relação com Disciplinas Futuras
-
-Matemática Discreta é base direta para:
-
-- Algoritmos e Estruturas de Dados;
-- Programação Orientada a Objetos;
-- Banco de Dados;
-- Inteligência Artificial;
-- Teoria da Computação;
-- Compiladores;
-- Criptografia;
-- Redes de Computadores.
-
----
-
-## 💡 Projeto Integrador da Disciplina
-
-### 🧮 Discrete Math Toolkit - C Edition
-
-Projeto desenvolvido para consolidar os principais conceitos da disciplina.
-
-Funcionalidades:
-
-### 🔹 Operações com Conjuntos
-
-- união
-- interseção
-- diferença
-- diferença simétrica
-- produto cartesiano
-
-### 🔹 Relações
-
-- verificação de reflexividade
-- simetria
-- antissimetria
-- transitividade
-
-### 🔹 Lógica Proposicional
-
-- AND
-- OR
-- NOT
-- XOR
-- implicação
-- bicondicional
-- tabela-verdade
-
-### 🔹 Grafos
-
-- matriz de adjacência
-- DFS
-- BFS
-- caminhos entre vértices
-
-### 🔹 Histórico
-
-- salvamento em arquivo
-- consulta de operações
-
-Conceitos aplicados:
-
-- vetores
-- matrizes
-- funções
-- structs
-- arquivos
-- modularização
-- algoritmos clássicos
-
----
-
-## 🎓 Importância na Formação
-
-Matemática Discreta fornece a base teórica que sustenta praticamente toda a Ciência da Computação.
-
-Grande parte dos algoritmos, estruturas de dados e modelos computacionais utilizados em disciplinas futuras são construídos a partir dos conceitos estudados aqui.
-
-Além disso, a disciplina desenvolve a capacidade de abstração, modelagem e resolução de problemas, competências essenciais para qualquer desenvolvedor ou cientista da computação.
-
----
+Algoritmos e Estruturas de Dados · Programação Orientada a Objetos · Banco de Dados · Inteligência Artificial · Teoria da Computação · Compiladores · Criptografia · Redes de Computadores
 
 ## 👨‍💻 Autor
 

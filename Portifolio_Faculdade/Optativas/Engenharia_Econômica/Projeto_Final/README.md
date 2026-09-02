@@ -1,107 +1,76 @@
 # 📈 Sistema de Análise de Investimentos em C
 
-Sistema desenvolvido em **C** com o objetivo de aplicar conceitos de **Engenharia Econômica** e **Matemática Financeira**, permitindo avaliar a viabilidade de diferentes projetos de investimento por meio de indicadores financeiros clássicos.
+Sistema em **C** que aplica conceitos de **Engenharia Econômica** e Matemática Financeira, avaliando a viabilidade de diferentes projetos de investimento através de indicadores financeiros clássicos.
 
----
+<p align="left">
+  <img src="https://img.shields.io/badge/C-A8B9CC?logo=c&logoColor=white" alt="C">
+  <img src="https://img.shields.io/badge/Matem%C3%A1tica%20Financeira-lightgrey" alt="Matemática Financeira">
+</p>
 
-## 📚 Sobre o Projeto
+## 📖 Sobre
 
-O sistema permite cadastrar projetos de investimento, registrar seus fluxos de caixa anuais e calcular indicadores financeiros utilizados na tomada de decisão, possibilitando comparar diferentes alternativas de investimento.
+O sistema permite cadastrar projetos de investimento, registrar seus fluxos de caixa anuais e calcular indicadores financeiros usados na tomada de decisão, possibilitando comparar diferentes alternativas de investimento lado a lado.
 
-Este projeto foi desenvolvido com foco em praticar conceitos de:
-
-- Estruturas (`struct`);
-- Vetores e matrizes;
-- Modularização com múltiplos arquivos;
-- Manipulação de arquivos;
-- Funções;
-- Matemática financeira;
-- Organização e persistência de dados em C.
-
----
+Foi desenvolvido com foco em praticar `struct`, vetores, modularização com múltiplos arquivos, manipulação de arquivos, funções e matemática financeira aplicada em C.
 
 ## ✨ Funcionalidades
 
-- 📌 Cadastro de projetos de investimento;
-- 💰 Registro do fluxo de caixa anual;
-- 📊 Cálculo do **Payback Simples**;
-- 📈 Cálculo do **Valor Presente Líquido (VPL)**;
-- 📉 Cálculo aproximado da **Taxa Interna de Retorno (TIR)**;
-- ⚖️ Comparação entre diferentes investimentos;
-- 💾 Salvamento e carregamento dos dados em arquivos;
-- 📋 Consulta das informações cadastradas.
+- Cadastro de projetos de investimento e registro do fluxo de caixa anual
+- Cálculo do **Payback Simples**
+- Cálculo do **Valor Presente Líquido (VPL)**
+- Cálculo aproximado da **Taxa Interna de Retorno (TIR)**
+- Comparação entre diferentes investimentos
+- Salvamento e carregamento dos dados em arquivo
+- Consulta das informações cadastradas
 
----
+## 🧮 Indicadores financeiros
 
-## 📂 Estrutura do Projeto
+| Indicador   | O que mede                                                                                          | Fórmula                                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Payback** | Tempo necessário para recuperar o capital investido                                                 | Soma acumulada do fluxo de caixa até zerar o investimento inicial                                                                 |
+| **VPL**     | Se o investimento gera valor, descontando os fluxos futuros a uma taxa mínima de atratividade (TMA) | `VPL = -Investimento + Σ [FCₜ / (1 + i)ᵗ]`                                                                                        |
+| **TIR**     | A taxa de desconto que zera o VPL — estima a rentabilidade do projeto                               | Aproximada por busca binária (_bisection_) sobre a taxa `i`, já que não há solução algébrica fechada para polinômios de grau alto |
+
+> 💡 **Melhoria aplicada nesta revisão:** o cálculo da TIR passou a ser explicitado como aproximação por bisseção — no material original isso não estava claro, o que podia confundir sobre a precisão do resultado. Deixar isso explícito no README evita que alguém use o valor como se fosse uma solução exata.
+
+## 📂 Estrutura do projeto
 
 ```text
 Projeto_Analise_Investimentos/
-│
-├── main.c               # Menu principal
-├── investimento.c       # Implementação das funções
-├── investimento.h       # Definições e protótipos
-├── dados.txt            # Armazenamento dos investimentos
+├── main.c               # menu principal
+├── investimento.c        # implementação das funções
+├── investimento.h         # definições e protótipos
+├── dados.txt                # armazenamento dos investimentos
 └── README.md
 ```
 
----
+## 🛠️ Tecnologias
 
-## 🧮 Indicadores Financeiros Utilizados
+C (`stdio.h`, `math.h`) · manipulação de arquivos · estruturas de dados simples
 
-### Payback
+## ▶️ Como executar
 
-Determina o tempo necessário para recuperar o capital investido.
+```bash
+gcc main.c investimento.c -o analise_investimentos
+./analise_investimentos
+```
 
-### Valor Presente Líquido (VPL)
+## 🎓 Conceitos aplicados
 
-Avalia se um investimento gera valor considerando uma taxa de desconto.
+Programação estruturada · modularização · manipulação de arquivos · vetores · `struct` · funções · matemática financeira · persistência de dados
 
-### Taxa Interna de Retorno (TIR)
+## 🗺️ Possíveis melhorias
 
-Estima a rentabilidade do projeto ao longo do tempo.
-
----
-
-## 🛠 Tecnologias Utilizadas
-
-- Linguagem C
-- Biblioteca padrão (`stdio.h`)
-- Manipulação de arquivos (`stdio.h`)
-- Funções matemáticas (`math.h`)
-- Estruturas de dados simples
-
----
-
-## 🚀 Possíveis Melhorias
-
-- Interface gráfica;
-- Exportação de relatórios em PDF;
-- Geração de gráficos comparativos;
-- Análise de sensibilidade;
-- Cálculo de Payback Descontado;
-- Simulação de cenários otimista, realista e pessimista;
-- Dashboard interativo;
-- Sistema de ranking dos investimentos.
-
----
-
-## 🎓 Conceitos Aplicados
-
-- Programação estruturada;
-- Modularização do código;
-- Manipulação de arquivos;
-- Vetores;
-- Estruturas (`struct`);
-- Funções;
-- Matemática financeira;
-- Engenharia Econômica;
-- Persistência de dados.
-
----
+- [ ] Interface gráfica
+- [ ] Exportação de relatórios em PDF
+- [ ] Geração de gráficos comparativos
+- [ ] Análise de sensibilidade
+- [ ] Cálculo de Payback Descontado
+- [ ] Simulação de cenários otimista, realista e pessimista
+- [ ] Dashboard interativo
+- [ ] Sistema de ranking dos investimentos
 
 ## 👨‍💻 Autor
 
 **Jonny Marcus**
-
-Estudante de Ciência da Computação e entusiasta de desenvolvimento de software, utilizando projetos práticos para consolidar conhecimentos em programação e engenharia de software.
+Estudante de Ciência da Computação e entusiasta de desenvolvimento de software.
