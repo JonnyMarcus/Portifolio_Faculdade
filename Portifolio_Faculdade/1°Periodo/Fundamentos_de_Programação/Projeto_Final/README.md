@@ -89,14 +89,6 @@ Esse arquivo é lido automaticamente (`CarregaAlunos`) a cada início do program
 | Operadores                       | Repetição (`for`/`do-while`)        | Ponteiros                                                         |
 | Entrada/saída (`scanf`, `fgets`) | Funções e parâmetros                | Arquivos (`fopen`/`fprintf`/`fscanf`) · ordenação (_bubble sort_) |
 
-## 🗺️ Evoluções futuras
-
-- [ ] Modularizar em múltiplos arquivos `.c`/`.h` (separar CRUD, persistência e menu)
-- [ ] Ordenar também por média
-- [ ] Gerar relatório resumido em arquivo separado
-- [ ] Trocar vetor de tamanho fixo por alocação dinâmica (`malloc`/`realloc`)
-- [ ] Validar entradas (matrícula duplicada, notas fora do intervalo 0–10)
-
 ## 👨‍💻 Autor
 
 **Jonny Marcus**

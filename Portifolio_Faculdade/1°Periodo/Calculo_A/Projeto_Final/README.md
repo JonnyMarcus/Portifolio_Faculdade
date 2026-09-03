@@ -26,7 +26,122 @@ Aplicar conceitos de cálculo diferencial e integral através da programação.
 | Estudo da função  | Raízes, vértice, máximo e mínimo                                   |
 | Plotagem gráfica  | Geração automática de pontos e gráfico via gnuplot                 |
 
+<<<<<<< HEAD
+
 ## 💻 Exemplo de uso
+
+=======
+
+- função quadrática
+- função polinomial simples
+
+### 🔹 Cálculo de Limites
+
+- aproximação numérica lateral
+- comportamento em pontos específicos
+
+### 🔹 Derivadas
+
+- cálculo da derivada da função
+
+f'(x)=\frac{d}{dx}f(x)
+
+- análise de crescimento
+- análise de decrescimento
+
+### 🔹 Integrais
+
+- cálculo aproximado por soma de retângulos
+
+\int_a^b f(x),dx
+
+- área sob a curva
+
+### 🔹 Estudo da Função
+
+- raízes
+- vértice
+- máximo e mínimo
+
+### 🔹 Plotagem Gráfica
+
+- geração automática de pontos
+- criação de gráfico com gnuplot
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+analisador_funcoes/
+│
+├── README.md
+├── main.c
+├── funcoes.c
+├── funcoes.h
+├── grafico.c
+├── grafico.h
+├── dados.txt
+└── graficos/
+```
+
+---
+
+## 📁 Organização dos Arquivos
+
+### main.c
+
+Responsável pelo menu principal e interação com o usuário.
+
+### funcoes.c / funcoes.h
+
+Contém:
+
+- cálculo da função
+- derivada
+- limites
+- integral
+
+### grafico.c / grafico.h
+
+Responsável por:
+
+- gerar pontos
+- salvar em arquivo
+- chamar gnuplot
+
+### dados.txt
+
+Arquivo temporário contendo os pontos do gráfico.
+
+### graficos/
+
+Armazena gráficos gerados.
+
+---
+
+## 🧠 Conceitos Matemáticos Aplicados
+
+### Limite
+
+\lim\_{x\to a} f(x)
+
+### Derivada de função quadrática
+
+genui{"math_block_widget_always_prefetch_v2":{"content":"f(x)=ax^2+bx+c"}}
+
+
+### Integral numérica
+
+\sum f(x)\Delta x
+
+---
+
+## 💻 Exemplo de Uso
+
+Entrada:
+
+> > > > > > > develop
 
 ```text
 Entrada: f(x) = 2x² + 3x − 1

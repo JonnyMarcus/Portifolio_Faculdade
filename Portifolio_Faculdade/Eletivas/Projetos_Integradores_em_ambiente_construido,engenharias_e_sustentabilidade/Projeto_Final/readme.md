@@ -1,13 +1,15 @@
 # 🌱 EcoItamambuca — Projeto Integrador
 
-Sistema integrado para **monitoramento territorial, participação comunitária e apoio à sustentabilidade** no território de Itamambuca, Ubatuba/SP.
+Sistema de **monitoramento territorial, participação comunitária e simulação de impacto ambiental** no território de Itamambuca, Ubatuba/SP.
 
 > Projeto final da disciplina **IRN021 — Projetos Integradores em Ambiente Construído, Engenharias e Sustentabilidade — UNIFEI**
 
 <p align="left">
   <img src="https://img.shields.io/badge/Projeto%20Final-IRN021-0B3D91" alt="Projeto Final IRN021">
-  <img src="https://img.shields.io/badge/Geotecnologia-QGIS-589632" alt="QGIS">
-  <img src="https://img.shields.io/badge/Sustentabilidade-SbN-2E7D32" alt="Soluções Baseadas na Natureza">
+  <img src="https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/PostgreSQL%2FPostGIS-4479A1?logo=postgresql&logoColor=white" alt="PostgreSQL/PostGIS">
+  <img src="https://img.shields.io/badge/QGIS-589632?logo=qgis&logoColor=white" alt="QGIS">
   <img src="https://img.shields.io/badge/UNIFEI-Instituto%20de%20Recursos%20Naturais-0B3D91" alt="UNIFEI">
 </p>
 
@@ -15,80 +17,70 @@ Sistema integrado para **monitoramento territorial, participação comunitária 
 
 ## 📖 Sobre o projeto
 
-O **EcoItamambuca** é uma proposta de solução tecnológica voltada ao **monitoramento e diagnóstico socioambiental do território de Itamambuca**, em Ubatuba/SP.
+O **EcoItamambuca** é uma plataforma digital voltada ao **monitoramento socioambiental do território de Itamambuca**, em Ubatuba/SP.
 
-O projeto integra **tecnologia da informação, geotecnologias, sustentabilidade e participação social**, permitindo organizar informações ambientais e territoriais em uma plataforma digital.
+O que diferencia o projeto de um sistema comum de denúncias é o seu núcleo: cada ocorrência de poluição registrada não é apenas um ponto no mapa — o sistema **simula seu impacto rio abaixo**, estimando até onde aquele poluente se dispersa, em quanto tempo e quantas pessoas e áreas sensíveis (captação de água, praia, zonas turísticas) são potencialmente afetadas.
 
-A solução busca facilitar a identificação de problemas como **alagamentos, erosão, descarte irregular de resíduos e degradação ambiental**, além de auxiliar na identificação de áreas prioritárias e na proposição de **Soluções Baseadas na Natureza (SbN)**.
+Essa abordagem se apoia em estudos reais já publicados sobre o Rio Itamambuca, que analisaram a dispersão de efluentes na bacia via modelagem matemática e computacional — o projeto adapta essa lógica de forma simplificada e interativa para uso comunitário.
 
 ---
 
 ## 🎯 Objetivo
 
-Desenvolver um sistema digital capaz de auxiliar no **monitoramento territorial e ambiental de Itamambuca**, promovendo a organização de dados, participação da comunidade e apoio ao planejamento de ações sustentáveis.
+Desenvolver um sistema digital capaz de transformar denúncias ambientais isoladas em **evidência visual e quantitativa de impacto**, apoiando tanto a comunidade quanto o poder público na priorização de intervenções em Itamambuca.
 
 ### Objetivos específicos
 
-- 🗺️ Mapear informações ambientais e territoriais;
-- 💧 Monitorar ocorrências relacionadas aos recursos hídricos;
-- 🌳 Identificar áreas de vulnerabilidade ambiental;
-- 📍 Registrar ocorrências por localização;
-- 📊 Organizar os dados em dashboards;
-- 👥 Incentivar a participação da comunidade;
-- 🌱 Propor Soluções Baseadas na Natureza;
-- 🔎 Apoiar a identificação de áreas prioritárias para intervenção.
+- 📍 Permitir que moradores e turistas registrem ocorrências de poluição georreferenciadas;
+- 🌊 Simular a dispersão do poluente a partir do ponto denunciado, ao longo do curso d'água;
+- 🗺️ Sobrepor a área de influência estimada a dados territoriais (captação de água, zonas de banho, densidade populacional);
+- 📊 Organizar as ocorrências e seus impactos estimados em um dashboard;
+- 🏛️ Formalizar automaticamente denúncias que atingem um limiar de gravidade, encaminhando-as aos órgãos responsáveis (prefeitura, CETESB);
+- 🌱 Sugerir Soluções Baseadas na Natureza (SbN) compatíveis com cada tipo de problema identificado.
 
 ---
 
 ## 🌍 Território de estudo
 
-O projeto tem como área de estudo o território de **Itamambuca, localizado no município de Ubatuba, São Paulo**.
-
-A região apresenta características ambientais e territoriais que tornam importante a integração entre preservação ambiental, ocupação urbana, recursos hídricos e participação social.
-
-O território é utilizado como **ambiente de aprendizagem e aplicação prática** dos conhecimentos desenvolvidos na disciplina.
+Itamambuca, distrito de Ubatuba/SP, cortado pelo Rio Itamambuca — corpo d'água responsável por parte do abastecimento local e por sustentar o turismo e o surfe da região. É um território com organização comunitária ativa (associações como a SAI — Sociedade Amigos de Itamambuca) e desafios documentados de poluição hídrica ligados a saneamento precário e ocupação irregular das margens, inclusive por loteamentos privados.
 
 ---
 
 ## 🚨 Problema
 
-A existência de diferentes informações sobre o território pode dificultar uma visão integrada dos problemas ambientais e das necessidades locais.
-
-Entre os problemas que podem ser monitorados pelo projeto estão:
-
-- Alagamentos;
-- Erosão;
-- Descarte irregular de resíduos;
-- Degradação da vegetação;
-- Problemas de drenagem;
-- Alterações em cursos d'água;
-- Áreas de vulnerabilidade ambiental.
-
-O EcoItamambuca busca transformar essas informações em **dados organizados e espacializados**, facilitando sua análise.
+Denúncias de poluição hoje dependem de mobilização manual e contínua da comunidade (como a SAI já faz há anos) para pressionar o poder público — sem dados estruturados que demonstrem a real extensão do impacto de cada ocorrência. Isso enfraquece o argumento de urgência e dificulta a priorização de qual ponto resolver primeiro.
 
 ---
 
 ## 💡 Solução proposta
 
-A solução é composta por uma plataforma digital integrada a dados geográficos.
-
 ```text
-              🌱 ECOITAMAMBUCA
-                     │
-        ┌────────────┼────────────┐
-        │            │            │
-       🗺️           📍           📊
-      MAPA       OCORRÊNCIAS   DASHBOARD
-        │            │            │
-        └────────────┼────────────┘
-                     │
-                     ▼
-              🔎 ANÁLISE TERRITORIAL
-                     │
-                     ▼
+                🌱 ECOITAMAMBUCA
+                       │
+      ┌────────────────┼────────────────┐
+      │                │                │
+     📍               🌊               📊
+ OCORRÊNCIA      SIMULAÇÃO DE      DASHBOARD +
+ (mapa + foto)   DISPERSÃO         PROTOCOLO
+      │                │                │
+      └────────────────┼────────────────┘
+                       │
+                       ▼
+              🔎 ÁREA DE IMPACTO ESTIMADA
+              (pessoas, captações, praia)
+                       │
+                       ▼
               🌱 SOLUÇÕES BASEADAS
                  NA NATUREZA
 ```
+
+### Como funciona, passo a passo
+
+1. O morador registra uma ocorrência: tipo de problema, localização, foto e descrição.
+2. O sistema estima a dispersão do poluente rio abaixo, usando um modelo simplificado baseado em vazão do trecho, distância e tempo decorrido.
+3. A área de influência estimada é sobreposta a dados do território (pontos de captação, praia, densidade de moradores) para calcular um **índice de impacto**.
+4. Ocorrências com índice de impacto alto — ou que atingem um número mínimo de denúncias próximas — geram automaticamente um protocolo formal, enviado à prefeitura e à CETESB.
+5. Todo o histórico alimenta um dashboard territorial, usado para identificar áreas prioritárias e propor Soluções Baseadas na Natureza.
 
 ---
 
@@ -96,118 +88,62 @@ A solução é composta por uma plataforma digital integrada a dados geográfico
 
 ### Mapa interativo
 
-Visualização de informações territoriais e ambientais por meio de diferentes camadas geográficas.
-
-Possíveis camadas:
-
-- Cursos d'água;
-- Vegetação;
-- Áreas urbanizadas;
-- Sistema viário;
-- Áreas de risco;
-- Pontos de alagamento;
-- Pontos de erosão;
-- Pontos de descarte irregular;
-- Áreas prioritárias.
+Visualização por camadas: cursos d'água, vegetação, áreas urbanizadas, pontos de captação, ocorrências ativas e áreas de impacto simuladas.
 
 ### 📍 Registro de ocorrências
 
-A comunidade poderá registrar problemas encontrados no território.
+Tipo do problema, localização, descrição, data, fotografia e prioridade — atribuída automaticamente conforme o índice de impacto calculado.
 
-Cada ocorrência poderá conter:
+### 🌊 Simulação de dispersão (diferencial do projeto)
 
-- Tipo do problema;
-- Localização;
-- Descrição;
-- Data;
-- Fotografia;
-- Grau de prioridade.
+Modelo simplificado que estima o alcance e o tempo de propagação de um poluente a partir do ponto denunciado, exibido como uma área dinâmica no mapa.
 
-### 📊 Dashboard
+### 🏛️ Protocolo automático
 
-Painel para visualização dos principais indicadores do território.
+Ao atingir um limiar de gravidade (ex.: múltiplas ocorrências próximas em 30 dias, ou impacto sobre ponto de captação), o sistema gera e envia um documento estruturado aos órgãos responsáveis, com status de acompanhamento (aberto / em análise / resolvido).
 
-Exemplos:
+### 📊 Dashboard territorial
 
-| Indicador          | Descrição                         |
-| ------------------ | --------------------------------- |
-| Ocorrências        | Total de registros                |
-| Alagamentos        | Pontos de alagamento registrados  |
-| Erosões            | Pontos de erosão identificados    |
-| Resíduos           | Ocorrências de descarte irregular |
-| Áreas prioritárias | Regiões que necessitam de atenção |
-| Resolvidas         | Ocorrências solucionadas          |
+| Indicador                 | Descrição                                     |
+| ------------------------- | --------------------------------------------- |
+| Ocorrências               | Total de registros                            |
+| Área de impacto acumulada | Extensão estimada afetada no período          |
+| Pontos críticos           | Locais com maior índice de impacto recorrente |
+| Protocolos abertos        | Denúncias formalizadas aguardando resposta    |
+| Resolvidas                | Ocorrências solucionadas                      |
 
 ### 🌱 Soluções Baseadas na Natureza
 
-O sistema também poderá apresentar alternativas de intervenção relacionadas aos problemas identificados.
-
-Exemplos:
-
-- Jardins de chuva;
-- Biovaletas;
-- Pavimentos permeáveis;
-- Recuperação de vegetação;
-- Recuperação de mata ciliar;
-- Áreas de infiltração;
-- Revegetação de áreas degradadas.
+Sugestões de intervenção conforme o tipo de problema: jardins de chuva, biovaletas, pavimentos permeáveis, recuperação de mata ciliar, áreas de infiltração.
 
 ---
 
 ## 🔬 Metodologia
 
-O projeto utiliza uma abordagem baseada em **Aprendizagem Baseada em Projetos (ABP)** e **Soluções Baseadas na Natureza (SbN)**.
+Abordagem baseada em **Aprendizagem Baseada em Projetos (ABP)** e **Soluções Baseadas na Natureza (SbN)**.
 
-### 1. Diagnóstico
-
-Levantamento das características ambientais, sociais e territoriais.
-
-### 2. Coleta de dados
-
-Utilização de:
-
-- Levantamentos de campo;
-- Dados geográficos;
-- Fotografias;
-- Entrevistas;
-- Oficinas participativas;
-- Informações públicas.
-
-### 3. Geoprocessamento
-
-Organização e análise dos dados utilizando ferramentas de **SIG e QGIS**.
-
-### 4. Desenvolvimento
-
-Implementação do protótipo da plataforma digital.
-
-### 5. Análise
-
-Identificação de áreas com maior concentração de problemas ambientais.
-
-### 6. Proposição de soluções
-
-Desenvolvimento de propostas de intervenção utilizando princípios de sustentabilidade e SbN.
-
-### 7. Participação social
-
-Apresentação dos resultados e coleta de contribuições da comunidade.
+1. **Diagnóstico** — levantamento das características ambientais, sociais e territoriais de Itamambuca.
+2. **Coleta de dados** — levantamentos de campo, dados geográficos, entrevistas, oficinas participativas, dados públicos (CETESB, prefeitura).
+3. **Geoprocessamento** — organização e análise espacial dos dados via SIG/QGIS.
+4. **Modelagem simplificada de dispersão** — adaptação de estudos existentes sobre o Rio Itamambuca a um modelo computacional leve.
+5. **Desenvolvimento** — implementação do protótipo da plataforma.
+6. **Análise** — identificação de áreas com maior concentração de impacto.
+7. **Participação social** — apresentação dos resultados e coleta de contribuições da comunidade.
 
 ---
 
 ## 🛠️ Tecnologias e ferramentas
 
-| Categoria        | Tecnologia            |
-| ---------------- | --------------------- |
-| Front-end        | HTML, CSS, JavaScript |
-| Framework        | React / Next.js       |
-| Back-end         | Node.js               |
-| Banco de dados   | PostgreSQL / PostGIS  |
-| Geoprocessamento | QGIS                  |
-| Mapas            | Leaflet               |
-| Dashboard        | Power BI              |
-| Design           | Figma                 |
-| Versionamento    | Git / GitHub          |
+| Categoria        | Tecnologia           |
+| ---------------- | -------------------- |
+| Front-end        | React / Next.js      |
+| Back-end         | Node.js              |
+| Banco de dados   | PostgreSQL / PostGIS |
+| Geoprocessamento | QGIS                 |
+| Mapas            | Leaflet              |
+| Dashboard        | Power BI             |
+| Design           | Figma                |
+| Versionamento    | Git / GitHub         |
 
 ---
 
@@ -232,7 +168,8 @@ EcoItamambuca/
 ├── backend/
 │   ├── routes/
 │   ├── controllers/
-│   └── services/
+│   ├── services/
+│   └── simulacao/          # modelo de dispersão de poluentes
 │
 ├── database/
 │   └── schema.sql
@@ -252,58 +189,26 @@ EcoItamambuca/
 
 ## 📈 Resultados esperados
 
-Espera-se que o projeto contribua para:
-
-- Melhor organização das informações territoriais;
-- Identificação de áreas vulneráveis;
-- Monitoramento de problemas ambientais;
-- Maior participação comunitária;
-- Visualização espacial das ocorrências;
-- Apoio ao planejamento territorial;
-- Divulgação de informações ambientais;
-- Identificação de áreas prioritárias;
-- Incentivo à utilização de Soluções Baseadas na Natureza.
-
----
-
-## 🌱 Impacto esperado
-
-O EcoItamambuca busca aproximar **universidade, comunidade, tecnologia e sustentabilidade**.
-
-A plataforma pode funcionar como uma ferramenta de apoio à compreensão do território, permitindo que informações produzidas pela comunidade e por levantamentos técnicos sejam reunidas em um ambiente único.
-
-Dessa forma, o projeto contribui para uma abordagem mais **participativa, integrada e sustentável** do planejamento territorial.
+- Transformar denúncias isoladas em evidência quantitativa de impacto ambiental;
+- Identificar áreas prioritárias com base em dados, não apenas em volume de reclamações;
+- Reduzir o tempo entre a identificação de um problema e a formalização da denúncia ao poder público;
+- Fortalecer a mobilização comunitária já existente em Itamambuca com dados estruturados;
+- Apoiar a proposição de Soluções Baseadas na Natureza direcionadas a cada ponto crítico.
 
 ---
 
 ## 🎓 Relação com a disciplina
 
-O projeto integra os principais conteúdos trabalhados na disciplina **IRN021**:
-
-- Ambiente construído;
-- Planejamento territorial;
-- Recursos hídricos;
-- Geotecnologias;
-- Diagnóstico territorial;
-- Participação social;
-- Monitoramento ambiental;
-- Ecologia;
-- Sustentabilidade;
-- Soluções Baseadas na Natureza;
-- Gestão ambiental.
+O projeto integra os principais conteúdos da disciplina **IRN021**: ambiente construído, planejamento territorial, recursos hídricos, geotecnologias, diagnóstico territorial, participação social, monitoramento ambiental, ecologia, sustentabilidade e Soluções Baseadas na Natureza.
 
 ---
 
 ## 📚 Projeto Integrador
 
 **Disciplina:** IRN021 — Projetos Integradores em Ambiente Construído, Engenharias e Sustentabilidade
-
 **Instituição:** Universidade Federal de Itajubá — UNIFEI
-
 **Área:** Instituto de Recursos Naturais — IRN
-
 **Território de estudo:** Itamambuca — Ubatuba/SP
-
 **Metodologia:** Aprendizagem Baseada em Projetos e Soluções Baseadas na Natureza
 
 ---
@@ -311,9 +216,7 @@ O projeto integra os principais conteúdos trabalhados na disciplina **IRN021**:
 ## 👨‍💻 Autor
 
 **Jonny Marcus**
-
 Graduando em Ciência da Computação — UNIFEI
-
 Projeto desenvolvido como atividade final da disciplina IRN021.
 
 ---
@@ -322,14 +225,6 @@ Projeto desenvolvido como atividade final da disciplina IRN021.
 
 🟡 **Projeto acadêmico em desenvolvimento**
 
-Este repositório reúne os estudos, diagnósticos, materiais e resultados desenvolvidos durante o projeto integrador.
-
 ---
 
-## 🌎 Conclusão
-
-O **EcoItamambuca** demonstra como a tecnologia pode ser utilizada como ferramenta de apoio à sustentabilidade e ao planejamento territorial.
-
-A integração entre **dados geográficos, tecnologia, participação social e Soluções Baseadas na Natureza** permite construir uma abordagem interdisciplinar para compreender os desafios ambientais e buscar alternativas mais sustentáveis para o território.
-
-> **Tecnologia para compreender o território. Dados para orientar decisões. Sustentabilidade para transformar o futuro. 🌱**
+> **Tecnologia para compreender o território. Simulação para dimensionar o impacto. Sustentabilidade para transformar o futuro. 🌱**
