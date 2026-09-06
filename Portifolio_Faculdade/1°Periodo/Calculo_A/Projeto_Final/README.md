@@ -26,8 +26,6 @@ Aplicar conceitos de cálculo diferencial e integral através da programação.
 | Estudo da função  | Raízes, vértice, máximo e mínimo                                   |
 | Plotagem gráfica  | Geração automática de pontos e gráfico via gnuplot                 |
 
-<<<<<<< HEAD
-
 ## 💻 Exemplo de uso
 
 =======
@@ -141,8 +139,6 @@ Armazena gráficos gerados.
 
 Entrada:
 
-> > > > > > > develop
-
 ```text
 Entrada: f(x) = 2x² + 3x − 1
 
@@ -186,12 +182,25 @@ gcc main.c funcoes.c grafico.c -o analisador
 ./analisador
 ```
 
-## 🗺️ Possíveis evoluções futuras
+## 🛠️ Dependências
 
-- [ ] Derivada numérica automática
-- [ ] Integrais definidas mais precisas
-- [ ] Suporte a múltiplos tipos de função
-- [ ] Comparação visual entre função e derivada
+- GCC
+- gnuplot
+- Visual Studio Code
+
+---
+
+## 🎓 Relação com Cálculo A
+
+Este projeto integra:
+
+- funções
+- limites
+- derivadas
+- integrais
+- interpretação gráfica
+
+---
 
 ## 👨‍💻 Autor
 

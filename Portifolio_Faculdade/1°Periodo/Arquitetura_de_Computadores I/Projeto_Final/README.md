@@ -61,15 +61,20 @@ gcc *.c -o simulador
 simulador.exe        # Windows
 ```
 
-## 🗺️ Possíveis melhorias
+---
 
-- [ ] Complemento de dois
-- [ ] Conversão IEEE 754
-- [ ] Tabela ASCII completa
-- [ ] Operações lógicas binárias (AND, OR, XOR, NOT)
-- [ ] Simulação de cache e de registradores
-- [ ] Visualização de memória por endereços
-- [ ] Interface gráfica
+## 🎓 Importância Acadêmica
+
+Este projeto foi desenvolvido para consolidar os conceitos fundamentais de Arquitetura de Computadores, proporcionando uma visão prática da representação e manipulação de dados em sistemas computacionais.
+
+Além disso, o projeto reforça conhecimentos em:
+
+- Programação em C;
+- Estruturas e funções;
+- Modularização;
+- Manipulação de dados;
+- Algoritmos de conversão;
+- Organização interna dos computadores.
 
 ## 👨‍💻 Autor
 

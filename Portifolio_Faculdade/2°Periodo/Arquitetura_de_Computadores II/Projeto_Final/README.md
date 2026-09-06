@@ -51,7 +51,6 @@ calculadora_binaria_assembly/
 ├── README.md
 └── calculadora.asm
 
-
 ## ▶️ Como executar
 
 ```bash
@@ -63,13 +62,6 @@ ld calculadora.o -o calculadora
 ## 🛠️ Tecnologias
 
 Assembly x86 · NASM · GCC/LD · Visual Studio Code
-
-## 🗺️ Possíveis evoluções futuras
-
-- [ ] Divisão
-- [ ] Menu interativo
-- [ ] Entrada por teclado completa
-- [ ] Suporte a múltiplas operações
 
 ## 👨‍💻 Autor
 

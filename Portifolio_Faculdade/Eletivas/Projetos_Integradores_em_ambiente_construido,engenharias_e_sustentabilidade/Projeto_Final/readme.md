@@ -11,9 +11,8 @@ Sistema de **monitoramento territorial, participação comunitária e simulaçã
   <img src="https://img.shields.io/badge/PostgreSQL%2FPostGIS-4479A1?logo=postgresql&logoColor=white" alt="PostgreSQL/PostGIS">
   <img src="https://img.shields.io/badge/QGIS-589632?logo=qgis&logoColor=white" alt="QGIS">
   <img src="https://img.shields.io/badge/UNIFEI-Instituto%20de%20Recursos%20Naturais-0B3D91" alt="UNIFEI">
-</p>
 
----
+</p>
 
 ## 📖 Sobre o projeto
 
@@ -85,6 +84,14 @@ Denúncias de poluição hoje dependem de mobilização manual e contínua da co
 ---
 
 ## 🗺️ Funcionalidades
+
+- 📍 Cadastro de ocorrências;
+- 🗺️ Mapa interativo;
+- 📊 Dashboard de indicadores;
+- 🔎 Filtros por categoria e severidade;
+- ⚠️ Classificação de prioridade;
+- 🌱 Sugestão de Soluções Baseadas na Natureza;
+- 🛰️ Integração com dados do QGIS.
 
 ### Mapa interativo
 
@@ -185,8 +192,6 @@ EcoItamambuca/
     └── diagramas/
 ```
 
----
-
 ## 📈 Resultados esperados
 
 - Transformar denúncias isoladas em evidência quantitativa de impacto ambiental;
@@ -216,15 +221,12 @@ O projeto integra os principais conteúdos da disciplina **IRN021**: ambiente co
 ## 👨‍💻 Autor
 
 **Jonny Marcus**
+
 Graduando em Ciência da Computação — UNIFEI
 Projeto desenvolvido como atividade final da disciplina IRN021.
-
----
 
 ## 📌 Status
 
 🟡 **Projeto acadêmico em desenvolvimento**
-
----
 
 > **Tecnologia para compreender o território. Simulação para dimensionar o impacto. Sustentabilidade para transformar o futuro. 🌱**
